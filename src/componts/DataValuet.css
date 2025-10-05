@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: #d4e6ff;
+  background-color: #020817;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  line-height: 1.5;
+  transition: 0.3s ease-in-out;
+  justify-content: space-between;
+  background-color: #0e1629;
+  transition: 0.3s ease-in-out;
+}
+.nav .protection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.3s ease-in-out;
+}
+.protection .title h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  padding: 2px 2px;
+  transition: 0.3s ease-in-out;
+}
+.protection .title > :last-child {
+  color: #94a3b8;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+.nav .upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.nav .upload button {
+  display: flex;
+  gap: 8px;
+  margin: 0 5px;
+  align-items: center;
+  justify-content: center;
+  border: 0.3px solid silver;
+  border-radius: 10px;
+  padding: 10px 18px;
+  color: #fff;
+  background-color: #020817;
+}
+.nav .upload button:hover {
+  background-color: #111728;
+}
+button p {
+  font-size: 10px;
+}
+.containers .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  transition: 0.3s ease-in-out;
+  margin: 20px 5px;
+  margin-top: 7rem;
+  transition: 0.3s ease-in-out;
+}
+
+.items .option {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border: 0.2px solid #b0b0b0;
+  margin: 7px 12px;
+  border-radius: 10px;
+  background-color: #0e1629;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.option .left > :first-child {
+  font-size: 25px;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+.option .left > :last-child {
+  font-size: 15px;
+  color: #b0b0b0;
+  font-weight: 100;
+}
+
+.wrapper {
+  display: flex;
+  align-items: start;
+  transition: 0.3s ease-in-out;
+}
+section {
+  flex: 1;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin: 20px 15px;
+  border: 1px solid silver;
+  background-color: #101929;
+}
+section .article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin: 15px 10px;
+  background-color: #1a2537;
+}
+.article .left > :first-child {
+  font-size: 17px;
+  margin: 5px 2px;
+  color: #fff;
+  font-weight: 700;
+}
+.article .left > :last-child {
+  font-size: 13px;
+}
+
+section .methods {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 5px 20px;
+}
+.methods h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+section .active {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+section .active > :first-child {
+  padding: 0px 15px;
+  font-size: 15px;
+  color: green;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid green;
+}
+
+section .active > :last-child {
+  font-weight: 400;
+  font-size: 15px;
+  color: #f5f5f5;
+}
+section > :nth-child(4) .active > :first-child {
+  color: #60a5fa;
+  border: 1px solid #2b5396;
+}
+section > :nth-child(5) .active > :first-child {
+  color: #fb923c;
+  border: 1px solid #2b5396;
+}
+
+.section_two {
+  flex: 1;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #101929;
+  transition: 0.3s ease-in-out;
+}
+.files {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 1px 5px;
+  padding: 10px;
+}
+
+.files .titles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.optionHeading .option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a2537;
+  margin: 10px 15px;
+  padding: 15px 12px;
+  border-radius: 12px;
+  transition: 0.4s ease-in-out;
+}
+
+.optionHeading .option.true {
+  background-color: rgb(78, 25, 25);
+}
+.option .optionOne {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.optionOne .text h2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.optionOne .text p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.optionTwo img {
+  opacity: 0.5;
+}
+.optionTwo img:hover {
+  opacity: 1;
+}
+
+/*  media queres */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containers .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wrapper {
+    display: block;
+  }
+}
+
+@media (min-width: 491px) and (max-width: 768px) {
+  .containers .items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 9rem;
+  }
+
+  .wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 490px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 15px;
+  }
+  .nav .upload button {
+    display: flex;
+    gap: 5px;
+    margin: 0 5px;
+    align-items: center;
+    justify-content: center;
+    border: 0.3px solid silver;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .nav .upload button img {
+    height: 10px;
+  }
+  button p {
+    font-size: 5px;
+  }
+  .protection .title h2 {
+    font-size: 10px;
+  }
+  .protection .title > :last-child {
+    color: #94a3b8;
+    font-size: 7px;
+  }
+  .containers .items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 6rem;
+  }
+  .option .left > :first-child {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .option .left > :last-child {
+    font-size: 8px;
+  }
+  .right img {
+    height: 20px;
+    transition: 0.3s ease-in;
+  }
+  .wrapper {
+    display: block;
+  }
+  .article .left > :first-child {
+    font-size: 11px;
+  }
+
+  .article .left > :last-child {
+    font-size: 4px;
+  }
+  section .active > :first-child {
+    padding: 2px 10px;
+    font-size: 6px;
+    color: green;
+  }
+  section .active > :last-child {
+    font-weight: 400;
+    font-size: 7px;
+  }
+  .optionOne .text h2 {
+    color: #fff;
+  }
+  .optionOne .text p {
+    font-size: 6px;
+  }
+}
