@@ -89,86 +89,67 @@ function Security() {
             <img className=" cursor-pointer" src={Finger} alt="" />
             <h2 className="text-2xl  font-medium ">Biometric Authentication</h2>
           </div>
-          <div className="items bg-[#1A2537]">
-            <option value="">
-              <div className="Finger">
-                <div>
-                  <img src={Finger} alt="" />
+          <div className="items">
+            <div className="option">
+              <div>
+                <div className="Auth">
                   <div>
-                    <h2>Finger</h2>
-                    <p>HardWare</p>
+                    <img src="" alt="" />
+                    <div className="Finger">
+                      <h2>Fingerprint Authentication</h2>
+                      <p>Hardware-backed fingerprint recognition</p>
+                    </div>
                   </div>
                   <div className="componts">
-                    <input type="checkbox" />
+                    <p>Switch</p>
                   </div>
                 </div>
-              </div>
-              <div className="Quality">
-                <div>
-                  <p>3 fingers enrolled</p>
-                  <input type="check" name="" id="" />
-                  <p>times</p>
+
+                <div className="Quality">
+                  <div className="Reco">
+                    <h2>Recognition Auth</h2>
+                    <input type="check" name="" id="" />
+                    <p>3 fingers enrolled</p>
+                  </div>
+                  <p>95%</p>
                 </div>
-                <div className="percent">95%</div>
               </div>
-            </option>
-            <option value="">
-              <div className="Finger">
-                <div>
+            </div>
+            <div className="option">
+              <div>
+                <div className="FaceTitle">
                   <img src="" alt="" />
                   <div>
-                    <h2>Finger</h2>
-                    <p>HardWare</p>
-                  </div>
-                  <div className="componts">
-                    <input type="checkbox" />
+                    <h2>Face Recognition</h2>
+                    <p>3D facial mapping with liveness detection</p>
                   </div>
                 </div>
+                <div className="componts">switch</div>
               </div>
-              <div className="Quality">
+              <div>
                 <div>
-                  <p>3 fingers enrolled</p>
-                  <input type="check" name="" id="" />
-                  <p>times</p>
+                  <p>Recognation Quality </p>
+                  <input type="check" />
+                  <p>1 face enrolled</p>
                 </div>
-                <div className="percent">95%</div>
+                <p>98%</p>
               </div>
-            </option>
-            <option value="">
-              <div className="Finger">
+            </div>
+            <div className="option">
+              <div>
+                <img src="" alt="" />
                 <div>
-                  <img src="" alt="" />
-                  <div>
-                    <h2>Finger</h2>
-                    <p>HardWare</p>
-                  </div>
-                  <div className="componts">
-                    <input type="checkbox" />
-                  </div>
+                  <h2>Iris Scanning</h2>
+                  <p>Advanced iris pattern recognition</p>
                 </div>
               </div>
-              <div className="Quality">
-                <div>
-                  <p>3 fingers enrolled</p>
-                  <input type="check" name="" id="" />
-                  <p>times</p>
-                </div>
-                <div className="percent">95%</div>
-              </div>
-            </option>
+              <div className="dot"></div>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
-}
-
-{
-  /* <label className="relative inline-flex items-center cursor-pointer">
-  <input type="checkbox" className="sr-only peer" />
-  <div className="w-14 h-7 bg-gray-700 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-green-400 rounded-full peer peer-checked:bg-green-900 transition-colors"></div>
-  <span className="absolute left-1 top-1 bg-gray-300 h-5 w-5 rounded-full transition-transform peer-checked:translate-x-7 peer-checked:bg-green-400"></span>
-</label> */
 }
 
 export default Security;

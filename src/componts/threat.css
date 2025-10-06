@@ -43,7 +43,7 @@ body {
 .nav .protection .heading :first-child {
   font-size: 25px;
   font-weight: 500;
-  color: red;
+  color: #fff;
   padding: 2px 2px;
 }
 /*  the right side or  quick scan */
