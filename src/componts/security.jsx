@@ -2,6 +2,8 @@ import React from "react";
 import menu from "./svg/menu.svg";
 import check from "./svg/check.svg";
 import Finger from "./svg3/fingerPrint.svg";
+import eye from "./svg3/eye.svg";
+
 function Security() {
   return (
     <>
@@ -92,9 +94,9 @@ function Security() {
           <div className="items">
             <div className="option">
               <div>
-                <div className="Auth">
-                  <div>
-                    <img src="" alt="" />
+                <div className="Auth flex items-center  justify-between  mx-4">
+                  <div className=" flex  gap-3 mx-3">
+                    <img src={Finger} alt="" />
                     <div className="Finger">
                       <h2>Fingerprint Authentication</h2>
                       <p>Hardware-backed fingerprint recognition</p>
