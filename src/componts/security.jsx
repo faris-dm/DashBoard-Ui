@@ -87,12 +87,12 @@ function Security() {
           </div>
         </div>
         <div className="biometric mx-4 my-2  bg-[#101929]">
-          <div className="title flex items-center   gap-2 p-3">
+          <div className="title flex items-center   gap-2  bg-[#101929] p-3 bg-[]">
             <img className=" cursor-pointer" src={Finger} alt="" />
             <h2 className="text-2xl  font-medium ">Biometric Authentication</h2>
           </div>
           <div className="items">
-            <div className="option">
+            <div className="option bg-[#1A2537] ">
               <div>
                 <div className="Auth flex items-center  justify-between  mx-4">
                   <div className=" flex  gap-3 mx-3 my-2">
@@ -113,17 +113,17 @@ function Security() {
                 <div className="Quality">
                   <div className="Reco">
                     <h2>Recognition Auth</h2>
-                    <input type="check" name="" id="" />
+                    <input type="checkbox" name="" />
                     <p>3 fingers enrolled</p>
                   </div>
                   <p>95%</p>
                 </div>
               </div>
             </div>
-            <div className="option bg-[]">
+            <div className="option  bg-[#1A2537] mx-4 my-3 rounded-lg ">
               <div className=" flex items-center justify-between mx-4">
                 <div className="FaceTitle">
-                  <img src="" alt="" />
+                  <img src={eye} alt="" />
                   <div>
                     <h2>Face Recognition</h2>
                     <p>3D facial mapping with liveness detection</p>
@@ -146,8 +146,8 @@ function Security() {
                 <p>98%</p>
               </div>
             </div>
-            <div className="option">
-              <div>
+            <div className="option flex justify-etween mx-4  bg-[#1A2537] ">
+              <div className="">
                 <img src="" alt="" />
                 <div>
                   <h2>Iris Scanning</h2>
