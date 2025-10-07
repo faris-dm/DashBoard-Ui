@@ -95,7 +95,7 @@ function Security() {
             <div className="option">
               <div>
                 <div className="Auth flex items-center  justify-between  mx-4">
-                  <div className=" flex  gap-3 mx-3">
+                  <div className=" flex  gap-3 mx-3 my-2">
                     <img src={Finger} alt="" />
                     <div className="Finger">
                       <h2>Fingerprint Authentication</h2>
@@ -103,7 +103,10 @@ function Security() {
                     </div>
                   </div>
                   <div className="componts">
-                    <p>Switch</p>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                      <input class="sr-only peer" value="" type="checkbox" />
+                      <div class="peer rounded-full outline-none duration-100 after:duration-500 w-22 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"></div>
+                    </label>
                   </div>
                 </div>
 
@@ -117,8 +120,8 @@ function Security() {
                 </div>
               </div>
             </div>
-            <div className="option">
-              <div>
+            <div className="option bg-[]">
+              <div className=" flex items-center justify-between mx-4">
                 <div className="FaceTitle">
                   <img src="" alt="" />
                   <div>
@@ -126,7 +129,13 @@ function Security() {
                     <p>3D facial mapping with liveness detection</p>
                   </div>
                 </div>
-                <div className="componts">switch</div>
+                <div className="componts">
+                  {" "}
+                  <label className="relative inline-flex items-center cursor-pointer">
+                    <input className="sr-only peer" value="" type="checkbox" />
+                    <div className="peer rounded-full outline-none duration-100 after:duration-500 w-22 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"></div>
+                  </label>
+                </div>
               </div>
               <div>
                 <div>
@@ -145,7 +154,15 @@ function Security() {
                   <p>Advanced iris pattern recognition</p>
                 </div>
               </div>
-              <div className="dot"></div>
+              <div className="dot">
+                <div className="componts">
+                  {" "}
+                  <label className="relative inline-flex items-center cursor-pointer">
+                    <input className="sr-only peer" value="" type="checkbox" />
+                    <div className="peer rounded-full outline-none duration-100 after:duration-500 w-22 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"></div>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
