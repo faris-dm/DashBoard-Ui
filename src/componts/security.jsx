@@ -227,7 +227,9 @@ function Security() {
               </div>
               <div className="flex items-center gap-2">
                 <img src={error} alt="" />
-                <p>enabled</p>
+                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+                  enabled
+                </p>
               </div>
             </div>
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
@@ -238,7 +240,9 @@ function Security() {
               </div>
               <div className="flex items-center gap-2">
                 <img src={error} alt="" />
-                <p>enabled</p>
+                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+                  enabled
+                </p>
               </div>
             </div>
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
@@ -249,7 +253,10 @@ function Security() {
               </div>
               <div className="flex items-center gap-2 ">
                 <img src={error} alt="" />
-                <p>enabled</p>
+                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+                  {" "}
+                  enabled
+                </p>
               </div>
             </div>
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
@@ -260,7 +267,9 @@ function Security() {
               </div>
               <div className="flex items-center gap-2 ">
                 <img src={error} alt="" />
-                <p>enabled</p>
+                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+                  enabled
+                </p>
               </div>
             </div>
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
@@ -271,7 +280,9 @@ function Security() {
               </div>
               <div className="flex items-center gap-2 ">
                 <img src={error} alt="" />
-                <p>enabled</p>
+                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+                  enabled
+                </p>
               </div>
             </div>
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
@@ -282,7 +293,9 @@ function Security() {
               </div>
               <div className="flex items-center gap-2 ">
                 <img src={error} alt="" />
-                <p>enabled</p>
+                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+                  enabled
+                </p>
               </div>
             </div>
           </div>
