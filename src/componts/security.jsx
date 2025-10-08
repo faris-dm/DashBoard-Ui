@@ -6,11 +6,14 @@ import smallFinger from "./svg3/smallFinger.svg";
 import protection from "./svg/protection.svg";
 
 import error from "./svg3/error.svg";
+import smallError from "./svg3/error2.svg";
+
 import smallProtection from "./svg3/smallProtection.svg";
 import cpu from "./svg3/cpu.svg";
 
 import eye from "./svg3/eye.svg";
 import screen from "./svg3/screen.svg";
+import key from "./svg3/key.svg";
 
 function Security() {
   return (
@@ -23,7 +26,7 @@ function Security() {
               <h2 className="text-white text-2xl py-1 font-bold">
                 Device Security
               </h2>
-              <p className=" text-[#b0b0b0] text-sm py-1 font-serif ">
+              <p className="text-[#b0b0b0] text-sm py-1 font-serif ">
                 Hardware-level protection and biometric authentication
               </p>
             </div>
@@ -36,8 +39,11 @@ function Security() {
             <p className="text-xs">Secure Device</p>
           </div>
         </div>
-        <div className="Items  grid grid-cols-4 gap-1 mx-2 my-4 ">
-          <div className="options text-white bg-[#101929] px-3  py-4 mx-2 rounded-xl ">
+        <div
+          className="Items grid lg:grid-cols-4 md:grid-cols-2  mx-2 my-4    
+      duration-300 ease-in "
+        >
+          <div className="options  text-white bg-[#101929] px-3  py-4 mx-2 my-3 rounded-xl ">
             <img src={check} alt="" />
             <div className=" py-4 text-center">
               <h2 className="text-white font-serif font-light">
@@ -51,7 +57,7 @@ function Security() {
               </p>
             </div>
           </div>
-          <div className="options text-white bg-[#101929] px-3  py-4 mx-2 rounded-xl  ">
+          <div className="options text-white bg-[#101929] px-3  py-4 mx-2 rounded-xl my-3  duration-300 ease-in ">
             <img src={check} alt="" />
             <div className=" py-4 text-center">
               <h2 className="text-white font-system-ui font-normal">
@@ -65,7 +71,7 @@ function Security() {
               </p>
             </div>
           </div>
-          <div className="options text-white bg-[#101929] px-3  py-4 mx-2 rounded-xl  ">
+          <div className="options text-white bg-[#101929] px-3  py-4 mx-2 rounded-xl my-3   ">
             <img src={check} alt="" />
             <div className=" py-4 text-center">
               <h2 className="text-white font-serif font-light">
@@ -79,9 +85,9 @@ function Security() {
               </p>
             </div>
           </div>
-          <div className="options text-white bg-[#101929] px-3  py-4 mx-2 rounded-xl ">
+          <div className="options  my-4 text-white bg-[#101929] px-3  py-4 mx-2 rounded-xl ">
             <img src={check} alt="" />
-            <div className="  py-4 text-center">
+            <div className="  py-3 text-center">
               <h2 className="text-white font-serif font-light">
                 secure Element
               </h2>
@@ -95,16 +101,16 @@ function Security() {
           </div>
         </div>
 
-        <div className="flex ">
+        <div className="lg:flex  md:block  sm:block  xs:block">
           <div className="biometric rounded-xl mx-4 my-2    bg-[#101929] flex-1">
-            <div className="title flex items-center   gap-2  bg-[#101929] p-3 bg-[]">
+            <div className="title flex items-center   gap-2  bg-[#101929] p-3">
               <img className=" cursor-pointer" src={Finger} alt="" />
               <h2 className="text-2xl  font-medium ">
                 Biometric Authentication
               </h2>
             </div>
-            <div className="">
-              <div className="items">
+            <div>
+              <div className="items ">
                 <div className="option bg-[#1A2537kjhgfds] mx-4 my-3 rounded-lg">
                   <div className="py-3">
                     <div className="Auth flex items-center  justify-between  mx-4">
@@ -225,9 +231,9 @@ function Security() {
                 <img src={smallProtection} alt="" />
                 <h2 className="text-lg font-thin">Device Encryption</h2>
               </div>
-              <div className="flex items-center gap-2">
-                <img src={error} alt="" />
-                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+              <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                <img src={smallError} alt="" />
+                <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                   enabled
                 </p>
               </div>
@@ -236,11 +242,11 @@ function Security() {
               <div className="flex gap-2 ">
                 {" "}
                 <img src={cpu} alt="" />
-                <h2>Secure Boot</h2>
+                <h2 className="text-lg font-thin">Secure Boot</h2>
               </div>
-              <div className="flex items-center gap-2">
-                <img src={error} alt="" />
-                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+              <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                <img src={smallError} alt="" />
+                <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                   enabled
                 </p>
               </div>
@@ -249,12 +255,11 @@ function Security() {
               <div className="flex items-center gap-2 ">
                 {" "}
                 <img src={check} alt="" />
-                <h2>App Verification</h2>
+                <h2 className="text-lg font-thin">App Verification</h2>
               </div>
-              <div className="flex items-center gap-2 ">
-                <img src={error} alt="" />
-                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
-                  {" "}
+              <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                <img src={smallError} alt="" />
+                <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                   enabled
                 </p>
               </div>
@@ -263,11 +268,11 @@ function Security() {
               <div className="flex gap-2">
                 {" "}
                 <img src={error} alt="" />
-                <h2>Unknown Sources</h2>
+                <h2 className="text-lg font-thin">Unknown Sources</h2>
               </div>
-              <div className="flex items-center gap-2 ">
-                <img src={error} alt="" />
-                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+              <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                <img src={smallError} alt="" />
+                <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                   enabled
                 </p>
               </div>
@@ -276,11 +281,11 @@ function Security() {
               <div className="flex gap-2">
                 {" "}
                 <img src={error} alt="" />
-                <h2>USB Debugging</h2>
+                <h2 className="text-lg font-thin">USB Debugging</h2>
               </div>
-              <div className="flex items-center gap-2 ">
-                <img src={error} alt="" />
-                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+              <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                <img src={smallError} alt="" />
+                <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                   enabled
                 </p>
               </div>
@@ -289,13 +294,37 @@ function Security() {
               <div className="flex gap-2">
                 {" "}
                 <img src={error} alt="" />
-                <h2>Developer Options</h2>
+                <h2 className="text-lg font-thin">Developer Options</h2>
               </div>
-              <div className="flex items-center gap-2 ">
-                <img src={error} alt="" />
-                <p className=" border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs inline-block">
+              <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                <img src={smallError} alt="" />
+                <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                   enabled
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="hardware bg-[#101929] my-6  mx-2  rounded-xl ">
+          <div className="">
+            <div className="flex gap-3 mx-4 py-4">
+              <img src={key} alt="" />
+              <h2 className="text-white text-lg font-thin  font-system-ui ">
+                Hardware Security Module (HSM)
+              </h2>
+            </div>
+            <div className="flex items-center justify-between mb-4">
+              <div className="text-center bg-[#1A2537] flex-1 mx-2 rounded-xl py-3">
+                <h2 className=" text-[#22D3EE] font-bold text-2xl">256</h2>
+                <p className="text-xs text-[#b0b0b0]">Encryption Keys</p>
+              </div>
+              <div className="text-center bg-[#1A2537] flex-1 1 mx-2 rounded-xl py-3">
+                <h2 className="font-bold text-2xl text-[#4ADE80]">TEE</h2>
+                <p className="text-xs text-[#b0b0b0]">Trusted Environment</p>
+              </div>
+              <div className="text-center bg-[#1A2537] flex-1 1 mx-2 my-y rounded-xl py-3">
+                <h2 className="font-bold text-2xl text-[#C084FC]">FIPS</h2>
+                <p className=" text-xs text-[#b0b0b0]">140-2 Level 3</p>
               </div>
             </div>
           </div>
