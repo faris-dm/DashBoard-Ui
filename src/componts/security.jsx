@@ -23,20 +23,20 @@ function Security() {
           <div className="menuTitle flex items-center gap-4 cursor-pointer ">
             <img src={menu} alt="" />
             <div>
-              <h2 className="text-white text-2xl py-1 font-bold">
+              <h2 className="text-white text-2xl md py-1 font-bold ">
                 Device Security
               </h2>
-              <p className="text-[#b0b0b0] text-sm py-1 font-serif ">
+              <p className="  text-[#b0b0b0] text-sm py-1 font-serif md:m-5 ">
                 Hardware-level protection and biometric authentication
               </p>
             </div>
           </div>
           <div
-            className=" flex flext-intital gap-2 items-center px-4 py-1
-             border-2 border-[#4AD86D]   rounded-4xl text-green-200 cursor-pointer border-solid"
+            className="flex flext-intital gap-2 items-center px-4 py-1
+             border-2 border-[#4AD86D]   rounded-4xl text-green-200 cursor-pointer border-solid md:mx-12 sm:mx-10 "
           >
             <img className="h-3" src={check} alt="" />
-            <p className="text-xs">Secure Device</p>
+            <p className="text-xs sm:ml-12  ">Secure Device</p>
           </div>
         </div>
         <div
@@ -313,16 +313,16 @@ function Security() {
                 Hardware Security Module (HSM)
               </h2>
             </div>
-            <div className="flex items-center justify-between mb-4">
-              <div className="text-center bg-[#1A2537] flex-1 mx-2 rounded-xl py-3">
+            <div className="lg:flex md:flex  items-center justify-between mb-4 sm:block  ">
+              <div className="text-center bg-[#1A2537] flex-1 mx-2 rounded-xl py-3  ">
                 <h2 className=" text-[#22D3EE] font-bold text-2xl">256</h2>
                 <p className="text-xs text-[#b0b0b0]">Encryption Keys</p>
               </div>
-              <div className="text-center bg-[#1A2537] flex-1 1 mx-2 rounded-xl py-3">
-                <h2 className="font-bold text-2xl text-[#4ADE80]">TEE</h2>
+              <div className="text-center bg-[#1A2537] flex-1  mx-2 rounded-xl py-3 ">
+                <h2 className="font-bold text-2xl text-[#4ADE80] ">TEE</h2>
                 <p className="text-xs text-[#b0b0b0]">Trusted Environment</p>
               </div>
-              <div className="text-center bg-[#1A2537] flex-1 1 mx-2 my-y rounded-xl py-3">
+              <div className="text-center bg-[#1A2537] flex-1 1 mx-2 my-y rounded-xl py-3 ">
                 <h2 className="font-bold text-2xl text-[#C084FC]">FIPS</h2>
                 <p className=" text-xs text-[#b0b0b0]">140-2 Level 3</p>
               </div>
