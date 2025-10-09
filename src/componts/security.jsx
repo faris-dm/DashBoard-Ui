@@ -32,11 +32,11 @@ function Security() {
             </div>
           </div>
           <div
-            className="flex flext-intital gap-2 items-center px-4 py-1
-             border-2 border-[#4AD86D]   rounded-4xl text-green-200 cursor-pointer border-solid md:mx-12 sm:mx-10 "
+            className="flex  gap-1 items-center px-1 py-1
+             border-2 border-[#4AD86D]   rounded-2xl text-green-200 cursor-pointer   "
           >
             <img className="h-3" src={check} alt="" />
-            <p className="text-xs sm:ml-12  ">Secure Device</p>
+            <p className="text-xs px-2  py-">Secure Device</p>
           </div>
         </div>
         <div
@@ -111,10 +111,10 @@ function Security() {
             </div>
             <div>
               <div className="items ">
-                <div className="option bg-[#1A2537kjhgfds] mx-4 my-3 rounded-lg">
+                <div className="option bg-[#1A2537] mx-4 my-3 rounded-lg">
                   <div className="py-3">
                     <div className="Auth flex items-center  justify-between  mx-4">
-                      <div className=" flex  gap-3 mx-3 my-2">
+                      <div className=" flex  gap-3 mx-3 my-2 ">
                         <img src={smallFinger} alt="" />
                         <div className="Finger">
                           <h2 className="text-sm font-bold">
@@ -318,12 +318,12 @@ function Security() {
                 <h2 className=" text-[#22D3EE] font-bold text-2xl">256</h2>
                 <p className="text-xs text-[#b0b0b0]">Encryption Keys</p>
               </div>
-              <div className="text-center bg-[#1A2537] flex-1  mx-2 rounded-xl py-3 ">
+              <div className="text-center bg-[#1A2537] flex-1  mx-2 rounded-xl py-3  my-3">
                 <h2 className="font-bold text-2xl text-[#4ADE80] ">TEE</h2>
                 <p className="text-xs text-[#b0b0b0]">Trusted Environment</p>
               </div>
-              <div className="text-center bg-[#1A2537] flex-1 1 mx-2 my-y rounded-xl py-3 ">
-                <h2 className="font-bold text-2xl text-[#C084FC]">FIPS</h2>
+              <div className="text-center bg-[#1A2537] flex-1 1 mx-2 my-3 rounded-xl py-3 ">
+                <h2 className="font-bold text-2xl text-[#C084FC] ">FIPS</h2>
                 <p className=" text-xs text-[#b0b0b0]">140-2 Level 3</p>
               </div>
             </div>
