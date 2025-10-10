@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import menu from "./svg/menu.svg";
 import check from "./svg/check.svg";
 import Finger from "./svg3/fingerPrint.svg";
@@ -21,27 +21,41 @@ import server from "./svg4/server.svg";
 import GreenGlobal from "./svg4/BigGlobal.svg";
 
 function Security() {
+  const [connect, setConnect] = useState(false);
+
+  const Clicked = () => {
+    setConnect(!connect);
+  };
   return (
     <>
       <div>
-        <div className="  nav flex flex-initial bg-[#0E1629] justify-between items-center px-8 py-5 text-white font-system-ui-500">
-          <div className="menuTitle flex items-center gap-4 cursor-pointer">
-            <img src={menu} alt="" />
-            <div>
-              <h2 className="text-white text-2xl md py-1 font-bold ">
-                Device Security
-              </h2>
-              <p className="  text-[#b0b0b0] text-sm  font-serif md:m-2 sm:px-5 ">
-                Hardware-level protection and biometric authentication
+        <div className=" fixed top-0 left-0 w-full">
+          <div className="  nav flex flex-initial bg-[#0E1629] justify-between items-center px-8 py-5 text-white font-system-ui-500">
+            <div className="menuTitle flex items-center gap-4 cursor-pointer">
+              <img src={menu} alt="" />
+              <div>
+                <h2 className="text-white text-2xl md py-1 font-bold ">
+                  Device Security
+                </h2>
+                <p className="  text-[#b0b0b0] text-sm  font-serif md:m-2 sm:px-5 ">
+                  Hardware-level protection and biometric authentication
+                </p>
+              </div>
+            </div>
+
+            <div
+              onClick={Clicked}
+              className={
+                connect
+                  ? "flex  gap-1 items-center px-1 py-1 border-2    bg-[#EF4444] text-  rounded-2xl text-black cursor-pointer"
+                  : "flex  gap-1 items-center px-1 py-1 border-2 border-[#4AD86D]   bg-[#4AD86D] text-  rounded-2xl text-black cursor-pointer"
+              }
+            >
+              <img className=" text-black" src={global} alt="" />
+              <p className="text-xs px-2  font-bold  ">
+                {connect ? "DisConnct VPN" : "Connct VPN"}
               </p>
             </div>
-          </div>
-          <div
-            className="flex  gap-1 items-center px-1 py-1
-             border-2 border-[#4AD86D]   bg-[#4AD86D] text-  rounded-2xl text-black cursor-pointer   "
-          >
-            <img className=" text-black" src={global} alt="" />
-            <p className="text-xs px-2  font-bold  ">Connct VPN</p>
           </div>
         </div>
         <div
@@ -126,14 +140,26 @@ function Security() {
                           </p>
                         </div>
                       </div>
-                      <div className="componts">
+                      <div
+                        className={
+                          connect
+                            ? "componts pointer-events-none opacity-10"
+                            : "componts pointer-events-none opacity-100"
+                        }
+                      >
                         <label class="relative inline-flex items-center cursor-pointer">
                           <input
                             class="sr-only peer"
                             value=""
                             type="checkbox"
                           />
-                          <div class="peer rounded-full outline-none duration-100 after:duration-500 w-22 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"></div>
+                          <div
+                            class={
+                              connect
+                                ? " opacity-100 peer rounded-full outline-none duration-100 after:duration-500 w-10 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"
+                                : "  peer rounded-full outline-none duration-100 after:duration-500 w-22 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"
+                            }
+                          ></div>
                         </label>
                       </div>
                     </div>
