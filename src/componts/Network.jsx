@@ -36,10 +36,10 @@ function Security() {
           </div>
           <div
             className="flex  gap-1 items-center px-1 py-1
-             border-2 border-[#4AD86D]   rounded-2xl text-red-200 cursor-pointer  bg-[#4AD86D]  "
+             border-2 border-[#4AD86D]   bg-[#4AD86D] text-  rounded-2xl text-black cursor-pointer   "
           >
-            <img className="h-3" src={global} alt="" />
-            <p className="text-xs px-2   ">Connct VPN</p>
+            <img className=" text-black" src={global} alt="" />
+            <p className="text-xs px-2  font-bold  ">Connct VPN</p>
           </div>
         </div>
         <div
@@ -178,7 +178,7 @@ function Security() {
                 </div>
                 <div className="option flex justify-between mx-4 my-2  bg-[#1A2537] py-4 ">
                   <div className="flex items-center gap-3 mx-5 my-2 ">
-                    <img src={server} alt="" />
+                    <img className="" src={server} alt="" />
                     <div>
                       <h2 className=" text-sm font-bold py-1">
                         DNS Protection
