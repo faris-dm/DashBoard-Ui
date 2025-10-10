@@ -10,6 +10,7 @@ import smallError from "./svg3/error2.svg";
 
 import smallProtection from "./svg3/smallProtection.svg";
 import cpu from "./svg3/cpu.svg";
+import Greenpro from "./svg4/Greenpro.svg";
 
 import eye from "./svg3/eye.svg";
 import screen from "./svg3/screen.svg";
@@ -17,19 +18,20 @@ import key from "./svg3/key.svg";
 import global from "./svg4/globe.svg";
 import wifi from "./svg4/wifi.svg";
 import server from "./svg4/server.svg";
+import GreenGlobal from "./svg4/BigGlobal.svg";
 
 function Security() {
   return (
     <>
       <div>
         <div className="  nav flex flex-initial bg-[#0E1629] justify-between items-center px-8 py-5 text-white font-system-ui-500">
-          <div className="menuTitle flex items-center gap-4 cursor-pointer ">
+          <div className="menuTitle flex items-center gap-4 cursor-pointer">
             <img src={menu} alt="" />
             <div>
               <h2 className="text-white text-2xl md py-1 font-bold ">
                 Device Security
               </h2>
-              <p className="  text-[#b0b0b0] text-sm  font-serif md:m-2 ">
+              <p className="  text-[#b0b0b0] text-sm  font-serif md:m-2 sm:px-5 ">
                 Hardware-level protection and biometric authentication
               </p>
             </div>
@@ -116,7 +118,7 @@ function Security() {
                   <div className="py-3">
                     <div className="Auth flex items-center  justify-between  mx-4">
                       <div className=" flex  gap-3 mx-3 my-2 ">
-                        <img src={smallFinger} alt="" />
+                        <img src={GreenGlobal} alt="" />
                         <div className="Finger">
                           <h2 className="text-sm font-bold">VPN Protection</h2>
                           <p className="text-sm text-[#B0B0B0]">
@@ -138,7 +140,7 @@ function Security() {
 
                     <div className="Quality mx-3">
                       <div className="flex justify-between items-center px-4 text-xs ">
-                        <p className=" text-[#b0b0b0] font-serif-system-ui">
+                        <p className=" text-[#22D3EE] font-serif-system-ui text-xs">
                           {" "}
                           Connected to secure server
                         </p>
@@ -149,7 +151,7 @@ function Security() {
                 <div className="option  bg-[#1A2537] mx-4 my-3 py-3 rounded-lg ">
                   <div className=" flex items-center justify-between mx-4">
                     <div className="FaceTitle flex  gap-3">
-                      <img src={eye} alt="" />
+                      <img src={Greenpro} alt="" />
                       <div className="py-1 px-3">
                         <h2 className="  font-bold py-1">
                           Firewall Protection
@@ -157,7 +159,7 @@ function Security() {
                         <p className="text-sm text-[#b0b0b0]">
                           Block malicious connections and unauthorized access
                         </p>
-                        <p className=" text-xs">
+                        <p className=" text-xs text-[#22D3EE]">
                           Active - 23 connections monitored
                         </p>
                       </div>
@@ -181,12 +183,14 @@ function Security() {
                     <img className="" src={server} alt="" />
                     <div>
                       <h2 className=" text-sm font-bold py-1">
-                        DNS Protection
+                        MITM Detection
                       </h2>
                       <p className="text-sm text-[#B0B0B0]">
-                        Secure DNS resolution with malware blocking
+                        Detect and prevent man-in-the-middle attacks
                       </p>
-                      <p>Using secure DNS servers</p>
+                      <p className="text-xs text-[#22D3EE]">
+                        Using secure DNS servers
+                      </p>
                     </div>
                   </div>
                   <div className="dot">
@@ -216,7 +220,9 @@ function Security() {
                       <p className="text-sm text-[#B0B0B0]">
                         Secure DNS resolution with malware blocking
                       </p>
-                      <p>Using secure DNS servers</p>
+                      <p className="text-xs text-[#22D3EE] ">
+                        Using secure DNS servers
+                      </p>
                     </div>
                   </div>
                   <div className="dot">
@@ -335,7 +341,7 @@ function Security() {
             <div className="lg:flex md:flex  items-center justify-between mb-4 sm:block  ">
               <div className="text-center bg-[#1A2537] flex-1 mx-2 rounded-xl py-3  ">
                 <h2 className=" text-[#22D3EE] font-bold text-2xl">256</h2>
-                <p className="text-xs text-[#b0b0b0]">
+                <p className=" text-sm text-[#22D3EE]">
                   Connected to secure server in Netherlands • IP:
                   185.232.xxx.xxx
                 </p>
