@@ -29,7 +29,7 @@ function Security() {
   return (
     <>
       <div>
-        <div className=" fixed top-0 left-0 w-full xs:mb-40">
+        <div className=" fixed  top-0 left-0 w-full z-40   xs:mb-40">
           <div className="  nav flex flex-initial bg-[#0E1629] justify-between items-center px-8 py-5 text-white font-system-ui-500">
             <div className="menuTitle flex items-center gap-4 cursor-pointer">
               <img src={menu} alt="" />
@@ -362,8 +362,14 @@ function Security() {
           <div className="">
             <div className="flex gap-3 mx-4 py-4">
               <img src={key} alt="" />
-              <h2 className="text-white text-lg font-thin   font-system-ui ">
-                VPN Connected
+              <h2
+                className={
+                  connect
+                    ? "  text-lg font-normal   font-system-ui "
+                    : "text-[#108359]  text-lg font-normal   font-system-ui"
+                }
+              >
+                {connect ? " VPN Disconnected" : " VPN Connected"}
               </h2>
             </div>
             <div className="lg:flex md:flex  items-center justify-between mb-4 sm:block  ">
