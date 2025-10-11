@@ -59,7 +59,7 @@ function Security() {
           </div>
         </div>
         <div
-          className="Items grid lg:grid-cols-4 md:grid-cols-2  mx-2 my-4 lg:mt-30 md:mt-30   sm:mt-32     
+          className="Items grid lg:grid-cols-4  md:grid-cols-2 max-[560px]:mt-[130px]  mx-2 my-4 lg:mt-30 md:mt-30       
       duration-300 ease-in "
         >
           <div className="options   text-white bg-[#101929] px-3  py-4 mx-2 my-3 rounded-xl ">
