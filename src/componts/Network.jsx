@@ -29,7 +29,7 @@ function Security() {
   return (
     <>
       <div>
-        <div className=" fixed top-0 left-0 w-full">
+        <div className=" fixed top-0 left-0 w-full xs:mb-40">
           <div className="  nav flex flex-initial bg-[#0E1629] justify-between items-center px-8 py-5 text-white font-system-ui-500">
             <div className="menuTitle flex items-center gap-4 cursor-pointer">
               <img src={menu} alt="" />
@@ -47,22 +47,22 @@ function Security() {
               onClick={Clicked}
               className={
                 connect
-                  ? "flex  gap-1 items-center px-1 py-1 border-2    bg-[#EF4444] text-  rounded-2xl text-black cursor-pointer"
-                  : "flex  gap-1 items-center px-1 py-1 border-2 border-[#4AD86D]   bg-[#4AD86D] text-  rounded-2xl text-black cursor-pointer"
+                  ? " duration-500 ease-in-out flex  gap-1 items-center px-1 py-1 border-2    bg-[#EF4444] text-  rounded-2xl text-black cursor-pointer"
+                  : "flex  gap-1 items-center px-1 py-1 border-2 border-[#4AD86D]   bg-[#4AD86D] text-  rounded-2xl text-black cursor-pointer duration-500 ease-out"
               }
             >
               <img className=" text-black" src={global} alt="" />
-              <p className="text-xs px-2  font-bold  ">
+              <p className="text-xs px-2  font-bold duration-800 ease-in-out  ">
                 {connect ? "DisConnct VPN" : "Connct VPN"}
               </p>
             </div>
           </div>
         </div>
         <div
-          className="Items grid lg:grid-cols-4 md:grid-cols-2  mx-2 my-4    
+          className="Items grid lg:grid-cols-4 md:grid-cols-2  mx-2 my-4 lg:mt-30 md:mt-30   sm:mt-32     
       duration-300 ease-in "
         >
-          <div className="options  text-white bg-[#101929] px-3  py-4 mx-2 my-3 rounded-xl ">
+          <div className="options   text-white bg-[#101929] px-3  py-4 mx-2 my-3 rounded-xl ">
             <img src={check} alt="" />
             <div className=" py-4 text-center">
               <h2 className="text-white font-serif font-light">
@@ -143,8 +143,8 @@ function Security() {
                       <div
                         className={
                           connect
-                            ? "componts pointer-events-none opacity-10"
-                            : "componts pointer-events-none opacity-100"
+                            ? "componts pointer-events-none opacity-10 duration-300 ease-in-out"
+                            : "componts   duration-300 ease-in-out pointer-events-none opacity-100"
                         }
                       >
                         <label class="relative inline-flex items-center cursor-pointer">
@@ -156,7 +156,7 @@ function Security() {
                           <div
                             class={
                               connect
-                                ? " opacity-100 peer rounded-full outline-none duration-100 after:duration-500 w-10 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"
+                                ? "duration-300 ease-out peer rounded-full outline-none duration-100 after:duration-500 w-10 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"
                                 : "  peer rounded-full outline-none duration-100 after:duration-500 w-22 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"
                             }
                           ></div>
@@ -166,9 +166,11 @@ function Security() {
 
                     <div className="Quality mx-3">
                       <div className="flex justify-between items-center px-4 text-xs ">
-                        <p className=" text-[#22D3EE] font-serif-system-ui text-xs">
+                        <p className=" duration-600 ease-in-out text-[#22D3EE] font-serif-system-ui text-xs">
                           {" "}
-                          Connected to secure server
+                          {connect
+                            ? "Disconnected"
+                            : " Connected to secure server"}
                         </p>
                       </div>
                     </div>
