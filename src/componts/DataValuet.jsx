@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./DataValuet.css";
+import "./DataValuet.css";
 import menu from "./svg2/menu.svg";
 import Decoy from "./DataValuetSvg/eye.svg";
 import upload from "./DataValuetSvg/upload.svg";

@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import Dashboard from "./componts/Dashboard";
 // import Threat from "./componts/threatPage";
-// import DataValue from "./componts/DataValuet";
+import DataValue from "./componts/DataValuet";
 import Security from "./componts/security";
 import Network from "./componts/Network";
 
@@ -12,9 +12,9 @@ function App() {
     <>
       {/* <Dashboard /> */}
       {/* <Threat /> */}
-      {/* <DataValue /> */}
+      <DataValue />
       {/* <Security /> */}
-      <Network />
+      {/* <Network /> */}
     </>
   );
 }
