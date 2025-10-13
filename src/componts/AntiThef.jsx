@@ -1,6 +1,7 @@
 import React from "react";
 
 import Location from "./svg5/Location.svg";
+import Alert from "./svg5/Alert.svg";
 
 function AntiThef() {
   return (
@@ -18,15 +19,15 @@ function AntiThef() {
             </div>
           </div>
 
-          <div>
+          <div className="flex ">
             <button>
               {" "}
-              <img src={location} alt="" />
+              <img src={Location} alt="" />
               <p>Locate Device</p>
             </button>
             <button>
               {" "}
-              <img src="" alt="" />
+              <img src={Alert} alt="" />
               <p>Emergancy</p>
             </button>
           </div>
