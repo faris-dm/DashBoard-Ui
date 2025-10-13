@@ -18,7 +18,6 @@ import alert from "./svg/alert.svg";
 function Dashboard() {
   return (
     <div className="text-slate-400 bg-[#020817] min-h-screen font-sans">
-      {/* Header */}
       <div className="flex items-center justify-between bg-[#17223a] px-6 py-2 mb-3">
         <div className="flex items-center gap-5">
           <img
