@@ -2,15 +2,16 @@ import React from "react";
 
 import Location from "./svg5/Location.svg";
 import Alert from "./svg5/Alert.svg";
+import Menu from "./svg5/menu.svg";
 
 function AntiThef() {
   return (
     <>
       <div>
-        <nav className=" flex justify-between  gap-4 items-center bg-[#17223a]">
-          <div>
+        <nav className=" flex justify-between  gap-4  py-4 px-3items-center bg-[#17223a]">
+          <div className="flex gap-4">
             <div>
-              <img src="" alt="" />
+              <img src={Menu} alt="" />
             </div>
 
             <div>
