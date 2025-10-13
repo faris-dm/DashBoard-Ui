@@ -7,7 +7,7 @@ function AntiThef() {
   return (
     <>
       <div>
-        <nav className=" flex justify-between items-center bg=[#17223a]">
+        <nav className=" flex justify-between  gap-4 items-center bg-[#17223a]">
           <div>
             <div>
               <img src="" alt="" />
@@ -19,13 +19,13 @@ function AntiThef() {
             </div>
           </div>
 
-          <div className="flex ">
-            <button>
+          <div className="flex  items-center">
+            <button gap-2 className="flex itens-center ">
               {" "}
               <img src={Location} alt="" />
               <p>Locate Device</p>
             </button>
-            <button>
+            <button className="flex items-center gap-4">
               {" "}
               <img src={Alert} alt="" />
               <p>Emergancy</p>
