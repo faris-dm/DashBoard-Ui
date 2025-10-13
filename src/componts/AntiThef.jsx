@@ -1,10 +1,12 @@
 import React from "react";
 
+import Location from "./svg5/Location.svg";
+
 function AntiThef() {
   return (
     <>
       <div>
-        <nav>
+        <nav className=" flex justify-between items-center bg=[#17223a]">
           <div>
             <div>
               <img src="" alt="" />
@@ -19,7 +21,7 @@ function AntiThef() {
           <div>
             <button>
               {" "}
-              <img src="" alt="" />
+              <img src={location} alt="" />
               <p>Locate Device</p>
             </button>
             <button>
