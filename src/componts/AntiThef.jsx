@@ -10,6 +10,7 @@ import sound from "./svg5/sound.svg";
 import trush from "./svg5/trush.svg";
 import eye from "./svg5/eye.svg";
 import flash from "./svg5/flash.svg";
+import LockedUn from "./svg5/lockedin.svg";
 import Protection from "./svg5/protection.svg";
 import { motion } from "framer-motion";
 import Switch from "./switch";
@@ -103,7 +104,7 @@ function AntiThef() {
                     <p className="text-[#b0b0b0] text-xs">
                       Real-time location tracking with 3-meter accuracy
                     </p>
-                    <p className="text-[#22d3ee] text-xs py-1">
+                    <p className="text-[#22d3ee] text-xs ">
                       Active - Location updated 2 min ago
                     </p>
                   </div>
@@ -121,7 +122,7 @@ function AntiThef() {
             <div className="flex items-center m-4 p-3 justify-between  bg-[#1A2537]  rounded-xl">
               <div className=" items-center  rounded-xl ">
                 <div className=" flex items-start gap-2">
-                  <img src={small} alt="" />
+                  <img src={LockedUn} alt="" />
                   <div>
                     <h3 className=" text-lg font-medium">Remote Lock</h3>
                     <p className="text-[#b0b0b0] text-sm">
@@ -145,7 +146,7 @@ function AntiThef() {
             <div className="flex items-center justify-between m-4 p-3  bg-[#1A2537]  rounded-xl">
               <div className=" items-center  rounded-xl ">
                 <div className=" flex items-start gap-2">
-                  <img src={small} alt="" />
+                  <img src={trush} alt="" />
                   <div>
                     <h3 className=" text-lg font-medium">Remote Wipe</h3>
                     <p className="text-[#b0b0b0] text-xs">
@@ -312,7 +313,7 @@ function AntiThef() {
               </div>
 
               {/*  frist compoents */}
-              <div className="flex items-center justify-between  bg-[#1A2537] m-1 rounded-xl">
+              <div className="flex items-center  justify-between  bg-[#1A2537] m-4 rounded-xl">
                 <div className=" items-center  p-1 rounded-xl m-3">
                   <div className=" flex items-start gap-2 ">
                     <div>
@@ -328,7 +329,7 @@ function AntiThef() {
                 </div>
                 <div>
                   {/* hhhhhhhh */}
-                  <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4   text-xs ">
+                  <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 mx-2   text-xs ">
                     <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                       Normal
                     </p>
@@ -351,7 +352,7 @@ function AntiThef() {
                 </div>
                 <div>
                   {/* hhhhhhhh */}
-                  <div className="flex items-center gap-2  border-1   border-solid border-blue-600  rounded-2xl text-sm  text-[#4AD86D]  px-4   text-xs ">
+                  <div className="flex items-center gap-2  border-1   border-solid border-blue-600  rounded-2xl text-sm  text-[#4AD86D]  px-4  mx-2  text-xs ">
                     <p className=" text-sm  text-blue-700    my-1 text-xs inline-block">
                       info
                     </p>
@@ -364,7 +365,7 @@ function AntiThef() {
 
               {/*  */}
               <div className="flex items-center justify-between  bg-[#1A2537] m-4 mb-6 rounded-xl">
-                <div className=" items-center  p-2 rounded-xl m-3">
+                <div className=" items-center  p-2 rounded-xl m-3 ">
                   <div className=" flex items-start gap-2  ">
                     <div>
                       <h3 className=" text-normal font-small ">
@@ -379,7 +380,7 @@ function AntiThef() {
                 </div>
                 <div>
                   {/* hhhhhhhh */}
-                  <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4   text-xs ">
+                  <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4   text-xs mx-2 ">
                     <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
                       Normal
                     </p>
