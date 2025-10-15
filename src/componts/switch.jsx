@@ -3,13 +3,10 @@ import React from "react";
 function Switch() {
   return (
     <>
-      <div className="componts pr-3">
-        {" "}
-        <label className="relative inline-flex items-center cursor-pointer">
-          <input className="sr-only peer" value="" type="checkbox" />
-          <div className="peer rounded-full outline-none duration-100 after:duration-500 w-22 h-10 bg-blue-300 peer-focus:outline-none peer-focus:ring-4  after:content-['Off'] after:absolute after:outline-none after:rounded-full after:h-8 after:w-8 after:bg-white after:top-1 after:left-1 after:flex after:justify-center after:items-center  after:text-sky-800 after:font-bold peer-checked:after:translate-x-12 peer-checked:after:content-['on'] peer-checked:after:border-white"></div>
-        </label>
-      </div>
+      <label className="relative inline-block w-[4.5em] h-[30px] max-[490px]:w-[38px] max-[490px]:h-[19px]">
+        <input type="checkbox" className="opacity-0 w-0 h-0 peer" />
+        <span className="absolute inset-0 bg-[#f7f9fb] rounded-full transition-all duration-100 before:content-[''] before:absolute before:h-[1.2em] before:w-[1.2em] before:rounded-full before:left-[0.3em] before:bottom-[0.3em] before:bg-[#333] before:transition-all peer-checked:bg-[#22d3ee] peer-checked:before:translate-x-[2.5em] max-[490px]:before:h-[0.7em] max-[490px]:before:w-[0.7em] max-[490px]:before:left-[0.2em] max-[490px]:before:bottom-[0.2em] max-[490px]:peer-checked:before:translate-x-[1.2em]" />
+      </label>
     </>
   );
 }

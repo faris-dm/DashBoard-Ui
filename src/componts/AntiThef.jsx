@@ -7,7 +7,9 @@ import BigLocation from "./svg5/BigLocation.svg";
 import Phone from "./svg5/phone.svg";
 import camera from "./svg5/camera.svg";
 import sound from "./svg5/sound.svg";
-
+import trush from "./svg5/trush.svg";
+import eye from "./svg5/eye.svg";
+import flash from "./svg5/flash.svg";
 import Protection from "./svg5/protection.svg";
 import { motion } from "framer-motion";
 import Switch from "./switch";
@@ -37,8 +39,8 @@ function AntiThef() {
               <p className="text-sm"> Locate Device</p>
             </button>
             <button
-              className="flex items-center gap-2
-            border border-gray-400 rounded-lg p-4 bg-[#731C1E] "
+              className="flex items-center gap-1
+            border border-gray-400 rounded-lg p-2  bg-[#731C1E] "
             >
               <img src={Alert} alt="" />
               <p className="text-sm ">Emergency Lock</p>
@@ -83,177 +85,317 @@ function AntiThef() {
         </div>
       </div>
 
-      <div className="my-4 bg-[#101929]">
-        <div className="flex items-center m-3 p-5  ">
-          <img className="" src={small} alt="" />
-          <h2 className="text-xl font-bold px-2">Protection features</h2>
-        </div>
-        <div className="flex items-center justify-between p-3 bg-[#1A2537] m-4 rounded-xl">
-          <div className=" items-center  p-2 rounded-xl m-3">
-            <div className=" flex items-start gap-2">
-              <img src={small} alt="" />
+      <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-1 mb-2">
+        <div>
+          <div className="m-4 rounded-xl bg-[#101929]">
+            <div className="flex items-center m-3 p-5  ">
+              <img className="" src={small} alt="" />
+              <h2 className="text-xl font-bold px-2">Protection features</h2>
+            </div>
+
+            {/*  frist compoents */}
+            <div className="flex items-center justify-between m-4 p-3 bg-[#1A2537]  rounded-xl">
+              <div className=" items-center   rounded-xl ">
+                <div className=" flex items-start gap-2">
+                  <img src={small} alt="" />
+                  <div>
+                    <h3 className=" text-lg font-medium">GPS Tracking</h3>
+                    <p className="text-[#b0b0b0] text-xs">
+                      Real-time location tracking with 3-meter accuracy
+                    </p>
+                    <p className="text-[#22d3ee] text-xs py-1">
+                      Active - Location updated 2 min ago
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div>
-                <h3 className=" text-lg font-medium">GPS Tracking</h3>
-                <p className="text-[#b0b0b0] text-xs">
-                  Real-time location tracking with 3-meter accuracy
-                </p>
-                <p className="text-[#22d3ee] text-xs py-1">
-                  Active - Location updated 2 min ago
-                </p>
+                {" "}
+                <Switch />{" "}
               </div>
             </div>
-          </div>
-          <div>
-            {" "}
-            <Switch />{" "}
-          </div>
-        </div>
 
-        {/*  the second section  */}
-        <div className="flex items-center justify-between p-3 bg-[#1A2537] m-4 rounded-xl">
-          <div className=" items-center  p-2 rounded-xl m-3">
-            <div className=" flex items-start gap-2">
-              <img src={small} alt="" />
+            {/* end of frist compoents */}
+
+            {/*  the second section  */}
+            <div className="flex items-center m-4 p-3 justify-between  bg-[#1A2537]  rounded-xl">
+              <div className=" items-center  rounded-xl ">
+                <div className=" flex items-start gap-2">
+                  <img src={small} alt="" />
+                  <div>
+                    <h3 className=" text-lg font-medium">Remote Lock</h3>
+                    <p className="text-[#b0b0b0] text-sm">
+                      Remote Lock device remotely with custom message
+                    </p>
+                    <p className="text-[#22d3ee] text-xs py-1">
+                      Ready - Can be triggered remotely
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div>
-                <h3 className=" text-lg font-medium">Remote Lock</h3>
-                <p className="text-[#b0b0b0] text-sm">
-                  Remote Lock device remotely with custom message
-                </p>
-                <p className="text-[#22d3ee] text-xs py-1">
-                  Ready - Can be triggered remotely
-                </p>
+                {" "}
+                <Switch />{" "}
               </div>
             </div>
-          </div>
-          <div>
-            {" "}
-            <Switch />{" "}
-          </div>
-        </div>
 
-        {/* end here */}
+            {/* end here */}
 
-        {/*  third compoents */}
-        <div className="flex items-center justify-between p-3 bg-[#1A2537] m-4 rounded-xl">
-          <div className=" items-center  p-2 rounded-xl m-3">
-            <div className=" flex items-start gap-2">
-              <img src={small} alt="" />
+            {/*  fourth componts  */}
+            <div className="flex items-center justify-between m-4 p-3  bg-[#1A2537]  rounded-xl">
+              <div className=" items-center  rounded-xl ">
+                <div className=" flex items-start gap-2">
+                  <img src={small} alt="" />
+                  <div>
+                    <h3 className=" text-lg font-medium">Remote Wipe</h3>
+                    <p className="text-[#b0b0b0] text-xs">
+                      Securely erase all data if device is stolen
+                    </p>
+                    <p className="text-[#22d3ee] text-xs py-1">
+                      Armed - Will activate on command
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div>
-                <h3 className=" text-lg font-medium">Remote Wipe</h3>
-                <p className="text-[#b0b0b0] text-xs">
-                  Securely erase all data if device is stolen
-                </p>
-                <p className="text-[#22d3ee] text-xs py-1">
-                  Armed - Will activate on command
-                </p>
+                {" "}
+                <Switch />{" "}
               </div>
             </div>
-          </div>
-          <div>
-            {" "}
-            <Switch />{" "}
-          </div>
-        </div>
 
-        {/*  thired componts end here */}
+            {/* fourth componets end */}
 
-        {/*  fourth componts  */}
-        <div className="flex items-center justify-between p-3 bg-[#1A2537] m-4 rounded-xl">
-          <div className=" items-center  p-2 rounded-xl m-3">
-            <div className=" flex items-start gap-2">
-              <img src={small} alt="" />
+            {/*  fifth compoents  */}
+
+            <div className="flex items-center justify-between m-4 p-3  bg-[#1A2537]  rounded-xl">
+              <div className=" items-center  rounded-xl ">
+                <div className=" flex items-start gap-2">
+                  <img src={camera} alt="" />
+                  <div>
+                    <h3 className=" text-lg font-medium">Stealth Camera</h3>
+                    <p className="text-[#b0b0b0] text-xs">
+                      Take photos when wrong unlock attempts are made
+                    </p>
+                    <p className="text-[#22d3ee] text-xs py-1">
+                      Monitoring - 3 failed attempts trigger
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div>
-                <h3 className=" text-lg font-medium">Remote Wipe</h3>
-                <p className="text-[#b0b0b0] text-xs">
-                  Securely erase all data if device is stolen
-                </p>
-                <p className="text-[#22d3ee] text-xs py-1">
-                  Armed - Will activate on command
-                </p>
+                {" "}
+                <Switch />{" "}
               </div>
             </div>
-          </div>
-          <div>
-            {" "}
-            <Switch />{" "}
-          </div>
-        </div>
+            {/*  fith compoents  ends here */}
 
-        {/* fourth componets end */}
+            {/*  six componts  */}
 
-        {/*  fifth compoents  */}
-
-        <div className="flex items-center justify-between p-3 bg-[#1A2537] m-4 rounded-xl">
-          <div className=" items-center  p-2 rounded-xl m-3">
-            <div className=" flex items-start gap-2">
-              <img src={camera} alt="" />
+            <div className="flex items-center justify-between bg-[#1A2537] m-4 p-3 rounded-xl">
+              <div className=" items-center  rounded-xl">
+                <div className=" flex items-start gap-2">
+                  <img src={sound} alt="" />
+                  <div>
+                    <h3 className=" text-lg font-medium">Loud Alarm</h3>
+                    <p className="text-[#b0b0b0] text-xs">
+                      Sound alarm even when device is on silent
+                    </p>
+                    <p className="text-[#22d3ee] text-xs py-1">
+                      Disabled - Can be enabled remotely
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div>
-                <h3 className=" text-lg font-medium">Stealth Camera</h3>
-                <p className="text-[#b0b0b0] text-xs">
-                  Take photos when wrong unlock attempts are made
-                </p>
-                <p className="text-[#22d3ee] text-xs py-1">
-                  Monitoring - 3 failed attempts trigger
-                </p>
+                {" "}
+                <Switch />{" "}
               </div>
             </div>
-          </div>
-          <div>
-            {" "}
-            <Switch />{" "}
-          </div>
-        </div>
-        {/*  fith compoents  ends here */}
 
-        {/*  six componts  */}
+            {/* six componets end */}
 
-        <div className="flex items-center justify-between p-3 bg-[#1A2537] m-4 rounded-xl">
-          <div className=" items-center  p-2 rounded-xl m-3">
-            <div className=" flex items-start gap-2">
-              <img src={sound} alt="" />
+            {/* final Componets */}
+
+            <div className="flex items-center justify-between  bg-[#1A2537] m-4 p-3 rounded-xl">
+              <div className=" items-center  rounded-xl ">
+                <div className=" flex items-start gap-2">
+                  <img src={Phone} alt="" />
+                  <div>
+                    <h3 className=" text-lg font-medium">SIM Change Alert</h3>
+                    <p className="text-[#b0b0b0] text-xs">
+                      Alert trusted contacts when SIM card is changed
+                    </p>
+                    <p className="text-[#22d3ee] text-xs py-1">
+                      Monitoring - 2 trusted contacts configured
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div>
-                <h3 className=" text-lg font-medium">Loud Alarm</h3>
-                <p className="text-[#b0b0b0] text-xs">
-                  Sound alarm even when device is on silent
-                </p>
-                <p className="text-[#22d3ee] text-xs py-1">
-                  Disabled - Can be enabled remotely
-                </p>
+                {" "}
+                <Switch />{" "}
               </div>
             </div>
+
+            {/*  end of sixth compoents */}
           </div>
-          <div>
-            {" "}
-            <Switch />{" "}
-          </div>
+          {/* finish the frist mthod */}
         </div>
 
-        {/* six componets end */}
+        <div>
+          <div className=" TRusted bg-[#161F2F]">
+            <div className="flex items-center m-3 p-5  ">
+              <img className="" src={eye} alt="" />
+              <h2 className="text-2xl font-normal px-2">Trusted Contacts</h2>
+            </div>
 
-        {/* final Componets */}
-
-        <div className="flex items-center justify-between p-3 bg-[#1A2537] m-4 rounded-xl">
-          <div className=" items-center  p-2 rounded-xl m-3">
-            <div className=" flex items-start gap-2">
-              <img src={Phone} alt="" />
+            {/*  frist compoents */}
+            <div className="flex items-center justify-between m-4 p-2 bg-[#1A2537]  rounded-xl">
+              <div className=" items-center  rounded-xl ">
+                <div className=" flex items-start gap-2">
+                  <div>
+                    <h3 className=" text-lg font-medium">John Doe</h3>
+                    <p className="text-[#b0b0b0] text-sm">+1 (555) 123-4567</p>
+                    <p className="text-[#22d3ee] text-xs py-1">Family</p>
+                  </div>
+                </div>
+              </div>
               <div>
-                <h3 className=" text-lg font-medium">SIM Change Alert</h3>
-                <p className="text-[#b0b0b0] text-xs">
-                  Alert trusted contacts when SIM card is changed
-                </p>
-                <p className="text-[#22d3ee] text-xs py-1">
-                  Monitoring - 2 trusted contacts configured
-                </p>
+                {/* hhhhhhhh */}
+                <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                  <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
+                    Active
+                  </p>
+                </div>
+                {/* kkkk */}
               </div>
             </div>
-          </div>
-          <div>
-            {" "}
-            <Switch />{" "}
-          </div>
-        </div>
 
-        {/*  end of sixth compoents */}
+            <div className="flex items-center justify-between m-4 p-2 bg-[#1A2537]  rounded-xl">
+              <div className=" items-center  rounded-xl ">
+                <div className=" flex items-start gap-2">
+                  <div>
+                    <h3 className=" text-lg font-medium">Jane Smith</h3>
+                    <p className="text-[#b0b0b0] text-sm">+1 (555) 123-4567</p>
+                    <p className="text-[#22d3ee] text-xs py-1">Family</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
+                  <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
+                    Active
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-5 p-1">
+              <button
+                className="w-full
+             mb-5  active:scale-98
+            border border-gray-400 rounded-lg  bg-[#020817] hover:opacity-40 hover:duration-300 ease-in-out"
+              >
+                <p className="text-sm p-2"> Add Contact</p>
+              </button>
+            </div>
+          </div>
+          {/* start on the first componts */}
+
+          {/*  gap between them */}
+
+          <div>
+            <div className=" TRusted bg-[#101929]">
+              <div className="flex items-center m-2 p-3  ">
+                <img className="" src={flash} alt="" />
+                <h2 className="text-2xl font-bold px-2">Recent Activity</h2>
+              </div>
+
+              {/*  frist compoents */}
+              <div className="flex items-center justify-between  bg-[#1A2537] m-1 rounded-xl">
+                <div className=" items-center  p-1 rounded-xl m-3">
+                  <div className=" flex items-start gap-2 ">
+                    <div>
+                      <h3 className=" text-normal font-small ">
+                        Location updated
+                      </h3>
+
+                      <p className="text-[#b0b0b0] text-xs py-1">
+                        2 minutes ago
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  {/* hhhhhhhh */}
+                  <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4   text-xs ">
+                    <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
+                      Normal
+                    </p>
+                  </div>
+                  {/* kkkk */}
+                </div>
+              </div>
+              {/*  down */}
+              <div className="flex items-center justify-between  bg-[#1A2537] m-4 rounded-xl">
+                <div className=" items-center  p-2 rounded-xl m-3">
+                  <div className=" flex items-start gap-2 ">
+                    <div>
+                      <h3 className=" text-normal font-small ">
+                        Geofence: Left home zone
+                      </h3>
+
+                      <p className="text-[#b0b0b0] text-xs py-1">2 hours ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  {/* hhhhhhhh */}
+                  <div className="flex items-center gap-2  border-1   border-solid border-blue-600  rounded-2xl text-sm  text-[#4AD86D]  px-4   text-xs ">
+                    <p className=" text-sm  text-blue-700    my-1 text-xs inline-block">
+                      info
+                    </p>
+                  </div>
+                  {/* kkkk */}
+
+                  {/*  finish */}
+                </div>
+              </div>
+
+              {/*  */}
+              <div className="flex items-center justify-between  bg-[#1A2537] m-4 mb-6 rounded-xl">
+                <div className=" items-center  p-2 rounded-xl m-3">
+                  <div className=" flex items-start gap-2  ">
+                    <div>
+                      <h3 className=" text-normal font-small ">
+                        Device unlocked successfully
+                      </h3>
+
+                      <p className="text-[#b0b0b0] text-xs py-1">
+                        15 minutes ago
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  {/* hhhhhhhh */}
+                  <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4   text-xs ">
+                    <p className=" text-sm  text-[#4AD86D]    my-1 text-xs inline-block">
+                      Normal
+                    </p>
+                  </div>
+                  {/* kkkk */}
+
+                  {/*  finish */}
+                </div>
+              </div>
+
+              {/* down */}
+            </div>
+          </div>
+
+          {/*  finsih of the final componts */}
+        </div>
       </div>
     </>
   );
