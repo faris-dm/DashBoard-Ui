@@ -80,8 +80,8 @@ function AntiThef() {
 
       <div className="my-4 bg-[#101929]">
         <div>
-          <img className="text-red" src="" alt="" />
-          <h2>Protection features</h2>
+          <img className="text-red-200" src="" alt="" />
+          <h2 className="">Protection features</h2>
         </div>
         <div className="flex items-center justify-between p-3 bg-[#1A2537]">
           <div className="p-2">
