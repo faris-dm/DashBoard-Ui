@@ -6,6 +6,7 @@ import eye from "./svg2/eye.svg";
 import flash from "./svg2/flash.svg";
 import heart from "./svg2/heart.svg";
 import protection from "./svg2/protection.svg";
+import Switch from "./switch";
 
 function Threat() {
   const [clicked, setClicked] = useState(false);
