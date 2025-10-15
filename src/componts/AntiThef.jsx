@@ -80,13 +80,13 @@ function AntiThef() {
 
       <div className="my-4 bg-[#101929]">
         <div>
-          <img src="" alt="" />
+          <img className="text-red" src="" alt="" />
           <h2>Protection features</h2>
         </div>
         <div className="flex items-center justify-between p-3 bg-[#1A2537]">
           <div className="p-2">
             {" "}
-            <h3 className="text-normal">GPS Tracking</h3>
+            <h3 className="">GPS Tracking</h3>
             <p>
               GPS Tracking Real-time location tracking with 3-meter accuracy
             </p>
