@@ -14,7 +14,6 @@ import LockedUn from "./svg5/lockedin.svg";
 import Protection from "./svg5/protection.svg";
 import { motion } from "framer-motion";
 import Switch from "./switch";
-
 import small from "./svg5/smallLocation.svg";
 
 function AntiThef() {

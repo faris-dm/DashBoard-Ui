@@ -5,6 +5,7 @@ import DataValue from "./componts/DataValuet";
 import Security from "./componts/security";
 import Network from "./componts/Network";
 import Theif from "./componts/AntiThef";
+import Setting from "./componts/Setting";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
       {/* <Security /> */}
       {/* <Network /> */}
       {/* <Theif /> */}
+      <Setting />
     </>
   );
 }
