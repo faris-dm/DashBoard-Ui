@@ -21,7 +21,7 @@ function AntiThef() {
   return (
     <>
       <nav className="bg-[#101929] p-4 ">
-        <div className="flex  gap-2 items-center py-2 justify-between">
+        <div className=" flex md:flex  sm:block  gap-2 items-center py-2 justify-between">
           <div className="anti flex gap-3 items-center  ">
             <img src={Menu} alt="" />
             <div>
@@ -31,17 +31,17 @@ function AntiThef() {
               </p>
             </div>
           </div>
-          <div className="btn flex gap-4">
+          <div className="btn flex gap-4 py-3 justify-center ">
             <button
               className="flex items-center
-            border border-gray-400 rounded-lg p-2 gap-2 hover:opacity-40 hover:duration-300 ease-in-out"
+            border border-gray-400 rounded-lg p-1  gap-2 hover:opacity-40 hover:duration-300 ease-in-out sm:w-full sm:justify-center  "
             >
               <img src={Location} alt="" />
               <p className="text-sm"> Locate Device</p>
             </button>
             <button
               className="flex items-center gap-1
-            border border-gray-400 rounded-lg p-2  bg-[#731C1E] "
+            border border-gray-400 rounded-lg p-2 sm:justify-center bg-[#731C1E] sm:w-full "
             >
               <img src={Alert} alt="" />
               <p className="text-sm ">Emergency Lock</p>
