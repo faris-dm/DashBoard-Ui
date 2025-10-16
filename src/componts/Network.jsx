@@ -179,7 +179,7 @@ function Security() {
                 </div>
                 <div className="option  bg-[#1A2537] mx-4 my-3 py-3 rounded-lg ">
                   <div className=" flex items-center justify-between mx-4">
-                    <div className="FaceTitle flex  gap-3">
+                    <div className="FaceTitle flex  gap-1">
                       <img src={Greenpro} alt="" />
                       <div className="py-1 px-3">
                         <h2 className="  font-bold py-1">

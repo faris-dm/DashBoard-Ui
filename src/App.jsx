@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       {/* <Dashboard /> */}
-      {/* <Threat /> */}
+      <Threat />
       {/* <DataValue /> */}
       {/* <Security /> */}
       {/* <Network /> */}
-      <Theif />
+      {/* <Theif /> */}
     </>
   );
 }
