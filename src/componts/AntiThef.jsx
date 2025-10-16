@@ -20,9 +20,9 @@ import small from "./svg5/smallLocation.svg";
 function AntiThef() {
   return (
     <>
-      <nav className="bg-[#101929] p-4 ">
-        <div className=" flex md:flex  sm:block  gap-2 items-center py-2 justify-between">
-          <div className="anti flex gap-3 items-center  ">
+      <nav className="bg-[#101929] p-4  fixed top-0 left-0 w-full z-1 ">
+        <div className=" flex md:flex    max-[661px]:block max-[661px]:gap-2 sm:block   gap-2 items-center py-2 justify-between">
+          <div className="anti flex gap-3 items-center   ">
             <img src={Menu} alt="" />
             <div>
               <h2 className="text-2xl py-1 font-bold">Anti-Theft Protection</h2>
@@ -49,7 +49,7 @@ function AntiThef() {
           </div>
         </div>
       </nav>
-      <div className="location  flex  items-center justify-between gap-3 bg-[#141E2E] my-4 mx-10 px-10 py-4 rounded-xl">
+      <div className="location  flex md:flex   max-[661px]:block    max-[661px]:py-2 sm:block items-center justify-between gap-3 bg-[#141E2E] my-4 mx-10 px-10 py-4 rounded-xl sm:mt-50 md:mt-40   max-[661px]:mt-50 ">
         <div flex items-center justify-between>
           <div className="Device flex  gap-3 my-4 ">
             <img src={small} alt="" />
@@ -70,7 +70,7 @@ function AntiThef() {
         </div>
 
         <div
-          className="flex  gap-4 bg-[#1C2739]  py-12 px-12 
+          className="flex   max-[661px]:my-4  max-[661px]:w-80   gap-4 bg-[#1C2739]  py-12 px-12 
         w-100 rounded-lg"
         >
           <div className="text-center">
