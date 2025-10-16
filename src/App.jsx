@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       {/* <Dashboard /> */}
-      <Threat />
+      {/* <Threat /> */}
       {/* <DataValue /> */}
       {/* <Security /> */}
       {/* <Network /> */}
