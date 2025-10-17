@@ -5,7 +5,7 @@ import DataValue from "./componts/DataValuet";
 import Security from "./componts/security";
 import Network from "./componts/Network";
 import Theif from "./componts/AntiThef";
-import Setting from "./componts/Setting";
+import Setting from "./componts/setting";
 
 import "./App.css";
 
