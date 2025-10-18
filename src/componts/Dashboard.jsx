@@ -17,8 +17,8 @@ import alert from "./svg/alert.svg";
 
 function Dashboard() {
   return (
-    <div className="text-slate-400 bg-[#020817] min-h-screen font-sans">
-      <div className="flex items-center justify-between bg-[#17223a] px-6 py-2 mb-3">
+    <div className=" text-slate-400 bg-[#020817] min-h-screen font-sans">
+      <div className="  fixed  top-0 left-0  w-full z-1  flex items-center justify-between bg-[#17223a] px-6 py-2 mb-3">
         <div className="flex items-center gap-5">
           <img
             src={menu}
@@ -40,7 +40,7 @@ function Dashboard() {
       </div>
 
       {/* Security Score */}
-      <div className="bg-[#1A2A44] border border-gray-500 rounded-lg p-3 mx-5 mb-5 transition-all">
+      <div className="bg-[#1A2A44] border border-gray-500 rounded-lg p-3 mx-5 mb-5 transition-all mt-25">
         <div className="flex items-center gap-2 mb-3">
           <img src={sheld} alt="" />
           <h3 className="text-2xl text-white font-bold">Security Score</h3>
@@ -64,7 +64,7 @@ function Dashboard() {
       </div>
 
       {/* Option Section */}
-      <div className="grid grid-cols-4 gap-4 mx-4 my-5 max-md:grid-cols-2 max-sm:grid-cols-1">
+      <div className="grid grid-cols-4 gap-4 mx-4 my-5 max-md:grid-cols-2 max-sm:grid-cols-1 ">
         <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
           <div>
             <h3 className="text-white text-2xl font-semibold">127</h3>

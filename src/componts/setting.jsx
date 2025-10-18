@@ -39,7 +39,7 @@ function Setting() {
           </div>
         </nav>
 
-        <div className="  my-4 mx-5 p-4 bg-[#141E2E] rounded-xl">
+        <div className="max-[661px]:mt-35 sm:mt-30 md:mt-30  my-4 mx-5 p-4 bg-[#141E2E] rounded-xl">
           <div className="flex gap-2">
             {/* className="text-[#22D3EE] w-7 h-7 */}
             <Smartphone className="text-[#22D3EE] w-7 h-7 " />
@@ -125,7 +125,7 @@ function Setting() {
           </div>
 
           {/* Notification section */}
-          <div className="bg-[#141E2E] py-2 px-5 mx-3 rounded-xl">
+          <div className="bg-[#141E2E] py-2 px-5 mx-3  my-5 rounded-xl md:mb-10 sm:mb-12">
             <div className="Accounts flex items-center gap-3 mx-3 py-2">
               <Bell className="text-[#22D3EE] w-7 h-7" />
               <h2 className="text-xl font-bold">Notifications</h2>

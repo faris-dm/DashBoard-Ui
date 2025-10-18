@@ -14,11 +14,11 @@ function App() {
     <>
       {/* <Dashboard /> */}
       {/* <Threat /> */}
-      {/* <DataValue /> */}
+      <DataValue />
       {/* <Security /> */}
       {/* <Network /> */}
       {/* <Theif /> */}
-      <Setting />
+      {/* <Setting /> */}
     </>
   );
 }

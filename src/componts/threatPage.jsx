@@ -20,10 +20,14 @@ function Threat() {
     <>
       <div className="w-full h-screen text-[#d4e6ff] bg-[#020817]">
         {/* Navigation */}
-        <div className="fixed   top-0 left-0 w-full flex items-center justify-between bg-[#0e1629] px-5 py-2.5 transition-all duration-300 ease-in-out md:flex-row flex-col max-[490px]:block">
+        <div className="fixed   top-0 left-0 w-full flex items-center justify-between bg-[#0e1629] px-5 py-2.5 transition-all duration-300 ease-in-out md:flex-row flex-col max-[490px]:block z-1">
           {/* Left side */}
           <div className="flex items-center justify-center gap-4 transition-all ease-in-out duration-300">
-            <img src={menu} alt="" className="h-[3vh] cursor-pointer" />
+            <img
+              src={menu}
+              alt=""
+              className="h-[3vh] cursor-pointer float-left"
+            />
             <div>
               <h2 className="text-[25px] font-medium text-white py-[2px] max-[768px]:text-[20px] max-[490px]:text-[20px]">
                 Threat Protection

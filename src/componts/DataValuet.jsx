@@ -19,13 +19,13 @@ function DataValuet() {
       {/* ===== Navbar ===== */}
       <div className="fixed top-0 left-0 w-full flex justify-between items-center bg-[#0e1629] px-5 py-3 md:px-8 md:py-4 z-50">
         {/* Title Section */}
-        <div className="flex items-center gap-3 md:gap-5">
+        <div className="flex items-center gap-3 md:gap-5 py-3">
           <img src={menu} alt="menu" className="h-5 md:h-6" />
           <div>
-            <h2 className="text-white text-sm sm:text-lg md:text-2xl font-bold leading-tight">
+            <h2 className="text-white text-lg sm:text-lg md:text-2xl font-bold leading-tight pb-2">
               Encrypted Data Vault
             </h2>
-            <p className="text-[#94a3b8] text-[8px] sm:text-sm">
+            <p className="text-[#94a3b8] text-[10px] sm:text-sm">
               Military-grade encryption for your sensitive data
             </p>
           </div>
@@ -52,7 +52,7 @@ function DataValuet() {
       </div>
 
       {/* ===== Stats ===== */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-[6rem] mx-4 sm:mx-6 lg:mx-10 transition-all duration-300">
+      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-[7rem] mx-4 sm:mx-6 lg:mx-10 lg:mt-[10rem] md:mt-[9rem] sm:mt-[8rem] transition-all duration-300 mt-[20px]  max-[661px]:mt-[7rem] ">
         {[
           { count: "127", label: "Encrypted Files", icon: Paper },
           { count: "89", label: "Secure Photos", icon: gallery },
