@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "./svg5/menu.svg";
 import Load from "./setting/load.svg";
 import Phone from "./svg5/phone.svg";
@@ -17,6 +17,17 @@ import {
 } from "lucide-react";
 
 function Setting() {
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  const handleClick = () => {
+    setIsSpinning(true);
+
+    // Stop the spin after 2 seconds (optional)
+    setTimeout(() => {
+      setIsSpinning(false);
+    }, 2000);
+  };
+
   return (
     <>
       <div>
@@ -33,11 +44,23 @@ function Setting() {
             </div>
           </div>
           {/*setting title  */}
-          <div className="flex items-center gap-2 border border-[#b0b0b0] rounded-xl p-2">
-            <img src={Load} alt="" />
+          <div
+            onClick={handleClick}
+            className="flex items-center gap-2 border border-[#b0b0b0] rounded-xl p-2 transition"
+          >
+            <img
+              className={`w-6 h-6 ${
+                isSpinning ? "animate-spin duration-500" : ""
+              }`}
+              //    we are using tailwind built funtion that makes a spins called animate-spin
+              src={Load}
+              alt=""
+            />
             <p className="text-sm bg-[#101929]">Check Updates</p>
           </div>
         </nav>
+
+        {/* ${isSpinning ? "animate-spin" : ""} */}
 
         <div className="max-[661px]:mt-35 sm:mt-30 md:mt-30  my-4 mx-5 p-4 bg-[#141E2E] rounded-xl">
           <div className="flex gap-2">
