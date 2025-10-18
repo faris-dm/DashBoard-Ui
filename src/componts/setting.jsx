@@ -80,95 +80,100 @@ function Setting() {
           </div>
         </div>
         {/* accounts profile */}
-        <div className="bg-[#141E2E] py-2 px-5 mx-3 rounded-xl">
-          <div className="Accounts flex items-center gap-3 mx-3 py-2">
-            <User className="text-[#22D3EE] w-7 h-7" />
-            <h2 className="text-xl font-bold">Account & Profile</h2>
+        <div
+          className="grid  grid-cols-2 lg:grid-cols-2
+        md:grid-cols-2  sm:grid-cols-1  max-[661px]:block  "
+        >
+          <div className=" bg-[#141E2E] py-2 px-5 mx-3 rounded-xl">
+            <div className="Accounts flex items-center gap-3 mx-3 py-2">
+              <User className="text-[#22D3EE] w-7 h-7" />
+              <h2 className="text-xl font-bold">Account & Profile</h2>
+            </div>
+
+            {/* Accounts Options */}
+            <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
+              <div className="">
+                <h3>Profile Information</h3>
+                <p className="text-[#b0b0b0] font-light">
+                  Update your personal details
+                </p>
+              </div>
+              <Switch />
+            </div>
+            {/* option */}
+
+            <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
+              <div className="">
+                <h3>Account Security</h3>
+                <p className="text-[#b0b0b0] font-light">
+                  Manage passwords and 2FA
+                </p>
+              </div>
+              <Switch />
+            </div>
+            {/* option 2 */}
+            <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
+              <div className="">
+                <h3>Privacy Settings</h3>
+                <p className="text-[#b0b0b0] font-light">
+                  Control data sharing preferences
+                </p>
+              </div>
+              <Switch />
+            </div>
+            {/* option 3 */}
           </div>
 
-          {/* Accounts Options */}
-          <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
-            <div className="">
-              <h3>Profile Information</h3>
-              <p className="text-[#b0b0b0] font-light">
-                Update your personal details
-              </p>
+          {/* Notification section */}
+          <div className="bg-[#141E2E] py-2 px-5 mx-3 rounded-xl">
+            <div className="Accounts flex items-center gap-3 mx-3 py-2">
+              <Bell className="text-[#22D3EE] w-7 h-7" />
+              <h2 className="text-xl font-bold">Notifications</h2>
             </div>
-            <Switch />
-          </div>
-          {/* option */}
 
-          <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
-            <div className="">
-              <h3>Account Security</h3>
-              <p className="text-[#b0b0b0] font-light">
-                Manage passwords and 2FA
-              </p>
+            {/* Accounts Options */}
+            <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
+              <div className="">
+                <h3>Threat Alerts</h3>
+                <p className="text-[#b0b0b0] font-light">
+                  Real-time security notifications
+                </p>
+              </div>
+              <Switch />
             </div>
-            <Switch />
-          </div>
-          {/* option 2 */}
-          <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
-            <div className="">
-              <h3>Privacy Settings</h3>
-              <p className="text-[#b0b0b0] font-light">
-                Control data sharing preferences
-              </p>
-            </div>
-            <Switch />
-          </div>
-          {/* option 3 */}
-        </div>
+            {/* option */}
 
-        {/* Notification section */}
-        <div className="bg-[#141E2E] py-2 px-5 mx-3 rounded-xl">
-          <div className="Accounts flex items-center gap-3 mx-3 py-2">
-            <Bell className="text-[#22D3EE] w-7 h-7" />
-            <h2 className="text-xl font-bold">Notifications</h2>
-          </div>
-
-          {/* Accounts Options */}
-          <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
-            <div className="">
-              <h3>Threat Alerts</h3>
-              <p className="text-[#b0b0b0] font-light">
-                Real-time security notifications
-              </p>
+            <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
+              <div className="">
+                <h3>Scan Completion</h3>
+                <p className="text-[#b0b0b0] font-light">
+                  Notify when scans finish
+                </p>
+              </div>
+              <Switch />
             </div>
-            <Switch />
-          </div>
-          {/* option */}
-
-          <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
-            <div className="">
-              <h3>Scan Completion</h3>
-              <p className="text-[#b0b0b0] font-light">
-                Notify when scans finish
-              </p>
+            {/* option 2 */}
+            <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
+              <div className="">
+                <h3>System Updates</h3>
+                <p className="text-[#b0b0b0] font-light">
+                  App and security updates
+                </p>
+              </div>
+              <Switch />
             </div>
-            <Switch />
-          </div>
-          {/* option 2 */}
-          <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
-            <div className="">
-              <h3>System Updates</h3>
-              <p className="text-[#b0b0b0] font-light">
-                App and security updates
-              </p>
+            {/* option 3 */}
+            <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
+              <div className="">
+                <h3>Weekly Reports</h3>
+                <p className="text-[#b0b0b0] font-light">
+                  Security summary emails
+                </p>
+              </div>
+              <Switch />
             </div>
-            <Switch />
+            {/* End of Option four */}
           </div>
-          {/* option 3 */}
-          <div className="flex justify-between items-center bg-[#1A2537]  mx-3 my-4 px-4 py-5 rounded-xl capitalize font-medium">
-            <div className="">
-              <h3>Weekly Reports</h3>
-              <p className="text-[#b0b0b0] font-light">
-                Security summary emails
-              </p>
-            </div>
-            <Switch />
-          </div>
-          {/* End of Option four */}
         </div>
 
         {/* End of Notification */}
@@ -199,7 +204,7 @@ function Setting() {
 
           {/* Network section */}
 
-          <div className="">
+          <div className=" ">
             <div className=" flex gap-3 bg-[#020817] p-3  mx-3  my-4 rounded-xl border">
               <Globe className="text-[#b0b0b0] w-5 h-5" />
               <h2> Network Diagnotics</h2>
