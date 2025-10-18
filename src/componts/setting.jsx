@@ -4,7 +4,17 @@ import Load from "./setting/load.svg";
 import Phone from "./svg5/phone.svg";
 import Switch from "./switch";
 
-import { Home, Smartphone, User, Bell } from "lucide-react";
+import {
+  Key,
+  Home,
+  Download,
+  Smartphone,
+  User,
+  Bell,
+  Upload,
+  Globe,
+  TriangleAlert,
+} from "lucide-react";
 
 function Setting() {
   return (
@@ -31,7 +41,8 @@ function Setting() {
 
         <div className="  my-4 mx-5 p-4 bg-[#141E2E] rounded-xl">
           <div className="flex gap-2">
-            <img src={Phone} alt="" />
+            {/* className="text-[#22D3EE] w-7 h-7 */}
+            <Smartphone className="text-[#22D3EE] w-7 h-7 " />
             <h2 className="text-xl font-bold">System Information</h2>
           </div>
           {/* grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 */}
@@ -162,7 +173,49 @@ function Setting() {
 
         {/* End of Notification */}
 
-        {/*  stRT OF aDVANCED oPTION */}
+        {/*  Start of Setting */}
+
+        <div className="bg-[#141E2E] py-2 px-5 mx-3 rounded-xl m-5 p-4">
+          <div className="flex gap-3 my-2 ">
+            <Key className="text-[#22D3EE] w-10 h-10" />
+            <h2 className="text-2xl font-bold">Advanced Options</h2>
+          </div>
+
+          {/* start the upload */}
+          <div className="">
+            <div className=" flex gap-3 bg-[#020817] p-3  mx-3 rounded-xl border">
+              <Download className="text-[#b0b0b0] w-5 h-5" />
+              <h2> Export Security Logs</h2>
+            </div>
+          </div>
+
+          {/*  second Import */}
+          <div className="">
+            <div className=" flex gap-3 bg-[#020817] p-3  mx-3  my-4 rounded-xl border">
+              <Upload className="text-[#b0b0b0] w-5 h-5" />
+              <h2> Inport Security Logs</h2>
+            </div>
+          </div>
+
+          {/* Network section */}
+
+          <div className="">
+            <div className=" flex gap-3 bg-[#020817] p-3  mx-3  my-4 rounded-xl border">
+              <Globe className="text-[#b0b0b0] w-5 h-5" />
+              <h2> Network Diagnotics</h2>
+            </div>
+          </div>
+          {/* Factory Restart */}
+
+          <div className="">
+            <div className=" flex gap-3 bg-[#020817] p-3  mx-3  my-4 rounded-xl border-red">
+              <TriangleAlert className="text-red-400 w-5 h-5" />
+              <h2 className="text-red-300"> Factory Reset</h2>
+            </div>
+          </div>
+
+          {/*  heading end here */}
+        </div>
       </div>
     </>
   );
