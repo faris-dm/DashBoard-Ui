@@ -14,9 +14,9 @@ function App() {
     <>
       {/* <Dashboard /> */}
       {/* <Threat /> */}
-      <DataValue />
+      {/* <DataValue /> */}
       {/* <Security /> */}
-      {/* <Network /> */}
+      <Network />
       {/* <Theif /> */}
       {/* <Setting /> */}
     </>

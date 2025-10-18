@@ -142,8 +142,8 @@ function DataValuet() {
         </section>
 
         {/* ===== Recent Files Section ===== */}
-        <div className="flex-1 bg-[#101929] border border-gray-400 rounded-lg p-4">
-          <div className="flex items-center gap-3 mb-3">
+        <div className="flex-1  bg-[#101929] border border-gray-400 rounded-lg p-4 sm:w-100">
+          <div className="flex items-center gap-3 mb-3 ">
             <img src={Paper} alt="paper" className="h-5 sm:h-6" />
             <h2 className="text-white text-lg sm:text-xl font-semibold">
               {show ? "Decoy Vault (Fake Data)" : "Recent Files"}
