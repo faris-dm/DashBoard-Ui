@@ -20,7 +20,7 @@ function Setting() {
   return (
     <>
       <div>
-        <nav className="flex justify-between items-center p-5 bg-[#101929]">
+        <nav className="  z-1 fixed top-0   max-[550px]:mb-20 left-0 w-full flex justify-between items-center p-5 bg-[#101929]">
           <div className="flex items-center gap-4">
             <img src={Menu} alt="" />
 
