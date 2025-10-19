@@ -6,6 +6,7 @@ import Security from "./componts/security";
 import Network from "./componts/Network";
 import Theif from "./componts/AntiThef";
 import Setting from "./componts/setting";
+import Slide from "./componts/Slide";
 
 import "./App.css";
 
@@ -18,7 +19,8 @@ function App() {
       {/* <Security /> */}
       {/* <Network /> */}
       {/* <Theif /> */}
-      <Setting />
+      {/* <Setting /> */}
+      <Slide />
     </>
   );
 }
