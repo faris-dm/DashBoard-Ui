@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "motion/react";
 
 import {
   Shield,
@@ -11,7 +12,7 @@ import {
 } from "lucide-react";
 
 function Slide() {
-  const [clicked, isClicked] = useState(false);
+  const [clicked, isClicked] = useState(null);
 
   const ClickChange = () => {
     isClicked(true);
