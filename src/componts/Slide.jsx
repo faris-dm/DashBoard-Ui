@@ -21,7 +21,7 @@ function Slide() {
   return (
     <>
       {/* lg:hidden md:block sm:hidden */}
-      <div className="  fixed top-0 left-0 bg-[#1E1B1E] w-96 h-screen z-1">
+      <div className=" z-1 fixed top-0 left-0 bg-[#1E1B1E] w-96 h-screen z-1">
         <div className="flex items-center  gap-4 mx-5 my p-4 ">
           <Shield className="text-[#22d3ee] w-10 h-10    " />
           <div>

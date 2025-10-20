@@ -13,14 +13,14 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <Dashboard /> */}
+      <Dashboard />
       {/* <Threat /> */}
       {/* <DataValue /> */}
       {/* <Security /> */}
       {/* <Network /> */}
       {/* <Theif /> */}
       {/* <Setting /> */}
-      <Slide />
+      {/* <Slide /> */}
     </>
   );
 }
