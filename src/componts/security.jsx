@@ -16,13 +16,13 @@ import screen from "./svg3/screen.svg";
 import key from "./svg3/key.svg";
 import Switch from "./switch";
 
-function Security() {
+function Security({ toggleSlide }) {
   return (
     <>
       <div>
         <div className="nav flex flex-initial bg-[#0E1629] justify-between items-center px-8 py-5 text-white font-system-ui-500">
           <div className="menuTitle flex items-center gap-4 cursor-pointer ">
-            <img src={menu} alt="" />
+            <img onClick={toggleSlide} src={menu} alt="" />
             <div>
               <h2 className="text-white text-2xl md py-1 font-bold ">
                 Device Security

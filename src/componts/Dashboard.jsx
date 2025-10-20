@@ -14,16 +14,16 @@ import phone from "./svg/phone.svg";
 import green_check from "./svg/greenPost.svg";
 import wrong from "./svg/wrong.svg";
 import alert from "./svg/alert.svg";
-import Slide from "./Slide";
 
-function Dashboard() {
+function Dashboard({ toggleSlide }) {
   return (
     <>
-      <Slide />
+      {/* <Slide /> */}
       <div className=" text-slate-400 bg-[#020817] min-h-screen font-sans">
         <div className="  fixed  top-0 left-0  w-full z--1  flex items-center justify-between bg-[#17223a] px-6 py-2 mb-3">
           <div className="flex items-center gap-5">
             <img
+              onClick={toggleSlide}
               src={menu}
               alt=""
               className="opacity-90 hover:opacity-100 cursor-pointer"

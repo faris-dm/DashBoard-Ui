@@ -10,17 +10,22 @@ import Protection from "./DataValuetSvg/protection.svg";
 import key from "./DataValuetSvg/key.svg";
 import upload2 from "./DataValuetSvg/upload2.svg";
 
-function DataValuet() {
+function DataValuet({ toggleSlide }) {
   const [show, setShow] = useState(false);
   const toggleShow = () => setShow(!show);
 
   return (
     <div className="bg-[#020817] text-[#d4e6ff] min-h-screen w-full font-sans">
       {/* ===== Navbar ===== */}
-      <div className="fixed top-0 left-0 w-full flex justify-between items-center bg-[#0e1629] px-5 py-3 md:px-8 md:py-4 z-50">
+      <div className="fixed top-0 left-0 w-full flex justify-between items-center bg-[#0e1629] px-5 py-3 md:px-8 md:py-4 ">
         {/* Title Section */}
         <div className="flex items-center gap-3 md:gap-5 py-3">
-          <img src={menu} alt="menu" className="h-5 md:h-6" />
+          <img
+            onClick={toggleSlide}
+            src={menu}
+            alt="menu"
+            className="h-5 md:h-6"
+          />
           <div>
             <h2 className="text-white text-lg sm:text-lg md:text-2xl font-bold leading-tight pb-2">
               Encrypted Data Vault

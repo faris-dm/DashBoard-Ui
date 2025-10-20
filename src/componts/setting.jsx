@@ -16,7 +16,7 @@ import {
   TriangleAlert,
 } from "lucide-react";
 
-function Setting() {
+function Setting({ toggleSlide }) {
   const [isSpinning, setIsSpinning] = useState(false);
 
   const handleClick = () => {
@@ -33,7 +33,7 @@ function Setting() {
       <div>
         <nav className="  z-1 fixed top-0   max-[550px]:mb-20 left-0 w-full flex justify-between items-center p-5 bg-[#101929]">
           <div className="flex items-center gap-4">
-            <img src={Menu} alt="" />
+            <img onClick={toggleSlide} src={Menu} alt="" />
 
             {/* setting heading */}
             <div>

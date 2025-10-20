@@ -8,7 +8,7 @@ import heart from "./svg2/heart.svg";
 import protection from "./svg2/protection.svg";
 import Switch from "./switch";
 
-function Threat() {
+function Threat({ toggleSlide }) {
   const [clicked, setClicked] = useState(false);
 
   const update = () => {
@@ -24,6 +24,7 @@ function Threat() {
           {/* Left side */}
           <div className="flex items-center justify-center gap-4 transition-all ease-in-out duration-300">
             <img
+              onClick={toggleSlide}
               src={menu}
               alt=""
               className="h-[3vh] cursor-pointer float-left"

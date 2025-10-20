@@ -11,6 +11,7 @@ import smallError from "./svg3/error2.svg";
 import smallProtection from "./svg3/smallProtection.svg";
 import cpu from "./svg3/cpu.svg";
 import Greenpro from "./svg4/Greenpro.svg";
+import Switch from "./switch";
 
 import eye from "./svg3/eye.svg";
 import screen from "./svg3/screen.svg";
@@ -19,9 +20,8 @@ import global from "./svg4/globe.svg";
 import wifi from "./svg4/wifi.svg";
 import server from "./svg4/server.svg";
 import GreenGlobal from "./svg4/BigGlobal.svg";
-import Switch from "./switch";
 
-function Security() {
+function Security({ toggleSlide }) {
   const [connect, setConnect] = useState(false);
 
   const Clicked = () => {
@@ -33,7 +33,7 @@ function Security() {
         <div className=" fixed  top-0 left-0 w-full z-40   xs:mb-40">
           <div className="  nav flex flex-initial bg-[#0E1629] justify-between items-center px-8 py-5 text-white font-system-ui-500">
             <div className="menuTitle flex items-center gap-4 cursor-pointer">
-              <img src={menu} alt="" />
+              <img onClick={toggleSlide} src={menu} alt="" />
               <div>
                 <h2 className="text-white text-2xl md py-1 font-bold ">
                   Device Security

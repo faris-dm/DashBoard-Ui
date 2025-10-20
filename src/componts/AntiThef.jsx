@@ -16,13 +16,13 @@ import { motion } from "framer-motion";
 import Switch from "./switch";
 import small from "./svg5/smallLocation.svg";
 
-function AntiThef() {
+function AntiThef({ toggleSlide }) {
   return (
     <>
       <nav className="bg-[#101929] p-4  fixed top-0 left-0 w-full z-1 ">
         <div className=" flex md:flex    max-[661px]:block max-[661px]:gap-2 sm:block   gap-2 items-center py-2 justify-between">
           <div className="anti flex gap-3 items-center   ">
-            <img src={Menu} alt="" />
+            <img onClick={toggleSlide} src={Menu} alt="" />
             <div>
               <h2 className="text-2xl py-1 font-bold">Anti-Theft Protection</h2>
               <p className="text-[#b0b0b0] text-sm">

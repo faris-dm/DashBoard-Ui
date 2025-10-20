@@ -11,16 +11,19 @@ import Slide from "./componts/Slide";
 import "./App.css";
 
 function App() {
+  const [isSlideVisible, setIsSlideVisible] = useState(false);
+
   return (
     <>
-      <Dashboard />
-      {/* <Threat /> */}
-      {/* <DataValue /> */}
-      {/* <Security /> */}
-      {/* <Network /> */}
-      {/* <Theif /> */}
-      {/* <Setting /> */}
-      {/* <Slide /> */}
+      <Slide isVisible={isSlideVisible} />
+      <Dashboard toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
+      {/* <Threat toggleSlide={() => setIsSlideVisible(!isSlideVisible)} /> */}
+      {/* <DataValue toggleSlide={() => setIsSlideVisible(!isSlideVisible)} /> */}
+      {/* <Security toggleSlide={() => setIsSlideVisible(!isSlideVisible)} /> */}
+      {/* <Network toggleSlide={() => setIsSlideVisible(!isSlideVisible)} /> */}
+      {/*  network has a problem with the  fixed nav bar */}
+      {/* <Theif toggleSlide={() => setIsSlideVisible(!isSlideVisible)} /> */}
+      {/* <Setting toggleSlide={() => setIsSlideVisible(!isSlideVisible)} /> */}
     </>
   );
 }
