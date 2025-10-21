@@ -10,6 +10,7 @@ import {
   Lock,
   Settings,
 } from "lucide-react";
+// import { Link } from "react-router-dom";
 
 function Slide({ isVisible }) {
   const [clicked, setClicked] = useState(null);
@@ -35,6 +36,7 @@ function Slide({ isVisible }) {
         <div className="text-[#6c6c6b] px-2">
           <p className=" border-t  border-silver-100"></p>
           <p className=" pt-3 pb-2 px-2">Security Center</p>
+
           <div
             onClick={() => setClicked(1)}
             className={`flex items-center gap-2 p-3 hover:bg-cyan-950 hover:rounded-xl  ${
@@ -50,6 +52,9 @@ function Slide({ isVisible }) {
               Threat Protection
             </h2>
           </div>
+
+          {/* end links */}
+
           {/* className="" dashboard */}
           <div
             onClick={() => setClicked(2)}

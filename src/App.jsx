@@ -7,6 +7,7 @@ import Network from "./componts/Network";
 import Theif from "./componts/AntiThef";
 import Setting from "./componts/setting";
 import Slide from "./componts/Slide";
+// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import "./App.css";
 
