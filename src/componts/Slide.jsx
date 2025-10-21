@@ -10,9 +10,9 @@ import {
   Lock,
   Settings,
 } from "lucide-react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Slide({ isVisible }) {
+function Slide({ isVisible, toggleSlide }) {
   const [clicked, setClicked] = useState(null);
 
   return (
@@ -22,6 +22,12 @@ function Slide({ isVisible }) {
         className={`fixed top-0 left-0 bg-[#1E1B1E] w-96 h-screen z-50 transition-all duration-300 transform
     ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}
       >
+        <div
+          onClick={}
+          className="text-red-800  absolute  font-bold text-lg pointer top-0 left-94"
+        >
+          &times;
+        </div>
         <div className="flex items-center  gap-4 mx-5 my p-4 ">
           <Shield className="text-[#22d3ee] w-10 h-10    " />
           <div>
@@ -37,26 +43,28 @@ function Slide({ isVisible }) {
           <p className=" border-t  border-silver-100"></p>
           <p className=" pt-3 pb-2 px-2">Security Center</p>
 
-          <div
+          <Link
+            to="/"
             onClick={() => setClicked(1)}
-            className={`flex items-center gap-2 p-3 hover:bg-cyan-950 hover:rounded-xl  ${
+            className={`flex items-center gap-2 p-3 hover:bg-cyan-950 hover:rounded-xl ${
               clicked === 1 ? "bg-cyan-700 rounded-xl" : ""
             }`}
           >
             <House
-              className={`  ${
-                clicked === 1 ? "text-[#22d3ee]  " : "text-[#b0b0b0]"
-              } `}
+              className={`${
+                clicked === 1 ? "text-[#22d3ee]" : "text-[#b0b0b0]"
+              }`}
             />
-            <h2 className="text-[#b0b0b0]  font-medium    text-sm capitalize ">
+            <h2 className="text-[#b0b0b0] font-medium text-sm capitalize">
               Threat Protection
             </h2>
-          </div>
+          </Link>
 
           {/* end links */}
 
           {/* className="" dashboard */}
-          <div
+          <Link
+            to="/data-value"
             onClick={() => setClicked(2)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 2 ? "bg-cyan-700 rounded-xl" : ""
@@ -70,12 +78,13 @@ function Slide({ isVisible }) {
             <h2 className="text-[#b0b0b0]    text-sm font-medium capitalize ">
               Data Vault
             </h2>
-          </div>
+          </Link>
           {/* ✅ :hover → when the user points
 ✅ :focus → when the element is selected (focused)
 ✅ :active → when the element is clicked or pressed */}
           {/* Therat Detection */}
-          <div
+          <Link
+            to="/security"
             onClick={() => setClicked(3)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 3 ? "bg-cyan-700 rounded-xl" : ""
@@ -89,10 +98,11 @@ function Slide({ isVisible }) {
             <h2 className="text-[#b0b0b0]    text-sm capitalize font-medium ">
               Device Security
             </h2>
-          </div>
+          </Link>
           {/* Data Valuet */}
           {/* Network Protection */}
-          <div
+          <Link
+            to="/network"
             onClick={() => setClicked(4)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 4 ? "bg-cyan-700 rounded-xl" : ""
@@ -106,9 +116,10 @@ function Slide({ isVisible }) {
             <h2 className="text-[#b0b0b0]    text-sm capitalize font-medium ">
               Protection
             </h2>
-          </div>
+          </Link>
           {/* Anti theif */}
-          <div
+          <Link
+            to="/anti-theft"
             onClick={() => setClicked(5)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 5 ? "bg-cyan-700 rounded-xl" : ""
@@ -122,9 +133,10 @@ function Slide({ isVisible }) {
             <h2 className="text-[#b0b0b0]    text-sm capitalize font-medium ">
               Anti-Theft
             </h2>
-          </div>
+          </Link>
           {/* setting */}
-          <div
+          <Link
+            to="/settings"
             onClick={() => setClicked(6)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 6 ? "bg-cyan-700 rounded-xl" : ""
@@ -138,7 +150,7 @@ function Slide({ isVisible }) {
             <h2 className="text-[#b0b0b0]    text-sm capitalize font-medium ">
               Setting
             </h2>
-          </div>
+          </Link>
         </div>
       </div>
     </>

@@ -29,9 +29,7 @@ function Dashboard({ toggleSlide }) {
               className="opacity-90 hover:opacity-100 cursor-pointer"
             />
             <div>
-              <h2 className="text-2xl font-semibold text-white">
-                Security Dashboard
-              </h2>
+              <h2 className="text-2xl font-semibold text-white">Dashboard</h2>
               <p className="text-sm">
                 Real-time protection status and threat monitoring
               </p>
