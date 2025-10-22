@@ -15,16 +15,22 @@ import { Link } from "react-router-dom";
 function Slide({ isVisible, toggleSlide }) {
   const [clicked, setClicked] = useState(null);
 
+  const [show, close] = useState(true);
+  const handleClose = () => {
+    close(false);
+  };
+
   return (
     <>
-      {/* lg:hidden md:block sm:hidden */}
       <div
         className={`fixed top-0 left-0 bg-[#1E1B1E] w-96 h-screen z-50 transition-all duration-300 transform
-    ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}
+    ${
+      isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
+    } ${show ? "block" : "hidden"}`}
       >
         <div
-          onClick={}
-          className="text-red-800  absolute  font-bold text-lg pointer top-0 left-94"
+          onClick={() => handleClose()}
+          className="text-red-800  absolute  font-bold text-2lg pointer top-0 left-92"
         >
           &times;
         </div>
