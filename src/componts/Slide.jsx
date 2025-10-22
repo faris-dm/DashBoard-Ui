@@ -12,13 +12,9 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-function Slide({ isVisible, toggleSlide }) {
+function Slide({ isVisible, setIsVisible }) {
   const [clicked, setClicked] = useState(null);
-
-  const [show, close] = useState(true);
-  const handleClose = () => {
-    close(false);
-  };
+  const handleClose = () => setIsVisible(false);
 
   return (
     <>
@@ -26,7 +22,7 @@ function Slide({ isVisible, toggleSlide }) {
         className={`fixed top-0 left-0 bg-[#1E1B1E] w-96 h-screen z-50 transition-all cursor duration-300 transform
     ${
       isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-    } ${show ? "translate-x-0 opacity-100  " : "-translate-x-full opacity-0"}`}
+    } || `}
       >
         <div
           onClick={() => handleClose()}

@@ -15,6 +15,7 @@ import "./App.css";
 
 function App() {
   const [isSlideVisible, setIsSlideVisible] = useState(false);
+  const toggleSlide = () => setIsSlideVisible((prev) => !prev);
 
   // ✅ This is your route map (your app's navigation brain)
   const router = createBrowserRouter([
@@ -22,7 +23,7 @@ function App() {
       path: "/", // default page
       element: (
         <>
-          <Slide isVisible={isSlideVisible} />
+          <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
           <Dashboard toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
         </>
       ),
