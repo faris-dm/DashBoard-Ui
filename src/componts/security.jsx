@@ -247,7 +247,7 @@ function Security({ toggleSlide }) {
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
               <div className="flex gap-2">
                 {" "}
-                <img src={error} alt="" />
+                <img src={error} className="w-5" alt="" />
                 <h2 className="text-lg font-thin">Unknown Sources</h2>
               </div>
               <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
@@ -260,7 +260,7 @@ function Security({ toggleSlide }) {
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
               <div className="flex gap-2">
                 {" "}
-                <img src={error} alt="" />
+                <img src={error} className="w-5" alt="" />
                 <h2 className="text-lg font-thin">USB Debugging</h2>
               </div>
               <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">
@@ -273,7 +273,7 @@ function Security({ toggleSlide }) {
             <div className="device flex justify-between items-center bg-[#1A2537] px-2 my-3 py-4  rounded-xl">
               <div className="flex gap-2">
                 {" "}
-                <img src={error} alt="" />
+                <img src={error} className="w-5" alt="" />
                 <h2 className="text-lg font-thin">Developer Options</h2>
               </div>
               <div className="flex items-center gap-2  border-1   border-solid border-[#4AD86D]  rounded-2xl text-sm  text-[#4AD86D]  px-4 py-0 my-1 text-xs ">

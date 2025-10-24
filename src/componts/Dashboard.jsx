@@ -1,5 +1,5 @@
 import React from "react";
-import { Wifi, Shield } from "lucide-react";
+import { Wifi, Shield, Lock } from "lucide-react";
 
 import menu from "./svg/menu.svg";
 import protection from "./svg/protection.svg";
@@ -89,7 +89,7 @@ function Dashboard({ toggleSlide }) {
               <h3 className="text-white text-2xl font-semibold">24</h3>
               <p>Protected Apps</p>
             </div>
-            <img src={locked} alt="" />
+            <Lock className="text-green-700" />
           </div>
 
           <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
