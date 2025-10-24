@@ -1,4 +1,6 @@
 import React from "react";
+import { Wifi, Shield } from "lucide-react";
+
 import menu from "./svg/menu.svg";
 import protection from "./svg/protection.svg";
 import heart from "./svg/heart.svg";
@@ -43,7 +45,7 @@ function Dashboard({ toggleSlide }) {
         {/* Security Score */}
         <div className="bg-[#1A2A44] border border-gray-500 rounded-lg p-3 mx-5 mb-5 transition-all mt-25">
           <div className="flex items-center gap-2 mb-3">
-            <img src={sheld} alt="" />
+            <Shield className="text-[#22d3ee]" />
             <h3 className="text-2xl text-white font-bold">Security Score</h3>
           </div>
 
@@ -95,7 +97,7 @@ function Dashboard({ toggleSlide }) {
               <h3 className="text-white text-2xl font-semibold">8</h3>
               <p>Network Connections</p>
             </div>
-            <img src={wi_fi} alt="" />
+            <Wifi className="text-[#22d3ee]" />
           </div>
         </div>
 

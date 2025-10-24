@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Menu from "./svg5/menu.svg";
 import Load from "./setting/load.svg";
-import Phone from "./svg5/phone.svg";
 import Switch from "./switch";
 
 import {

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Wifi } from "lucide-react";
+
 import Location from "./svg5/Location.svg";
 import Alert from "./svg5/Alert.svg";
 import Menu from "./svg5/menu.svg";

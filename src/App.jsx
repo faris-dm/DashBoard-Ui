@@ -15,7 +15,7 @@ import "./App.css";
 
 function App() {
   const [isSlideVisible, setIsSlideVisible] = useState(false);
-  const toggleSlide = () => setIsSlideVisible((prev) => !prev);
+  // const toggleSlide = () => setIsSlideVisible((prev) => !prev);
 
   // ✅ This is your route map (your app's navigation brain)
   const router = createBrowserRouter([
@@ -32,7 +32,7 @@ function App() {
       path: "/data-value",
       element: (
         <>
-          <Slide isVisible={isSlideVisible} />
+          <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
           <DataValue toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
         </>
       ),
@@ -41,7 +41,7 @@ function App() {
       path: "/threat",
       element: (
         <>
-          <Slide isVisible={isSlideVisible} />
+          <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
           <Threat toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
         </>
       ),
@@ -50,7 +50,7 @@ function App() {
       path: "/security",
       element: (
         <>
-          <Slide isVisible={isSlideVisible} />
+          <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
           <Security toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
         </>
       ),
@@ -59,7 +59,7 @@ function App() {
       path: "/network",
       element: (
         <>
-          <Slide isVisible={isSlideVisible} />
+          <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
           <Network toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
         </>
       ),
@@ -68,7 +68,7 @@ function App() {
       path: "/anti-theft",
       element: (
         <>
-          <Slide isVisible={isSlideVisible} />
+          <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
           <Theif toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
         </>
       ),
@@ -77,7 +77,7 @@ function App() {
       path: "/settings",
       element: (
         <>
-          <Slide isVisible={isSlideVisible} />
+          <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
           <Setting toggleSlide={() => setIsSlideVisible(!isSlideVisible)} />
         </>
       ),
