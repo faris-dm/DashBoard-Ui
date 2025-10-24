@@ -19,19 +19,19 @@ function Slide({ isVisible, setIsVisible }) {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 bg-[#1E1B1E] w-96 h-screen z-50 transition-all cursor duration-300 transform
+        className={`fixed top-0 left-0 bg-[#1E1B1E] w-96 h-screen z-50 transition-all pointer-cursor duration-300 transform
     ${
       isVisible ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-    } || `}
+    } `}
       >
         <div
           onClick={() => handleClose()}
-          className="text-red-800  absolute  font-bold text-2lg pointer top-0 left-92"
+          className="text-red-800  absolute  font-bold text-2lg pointer top-4 cursor-pointer right-4"
         >
           &times;
         </div>
         <div className="flex items-center  gap-4 mx-5 my p-4 ">
-          <Shield className="text-[#22d3ee] w-10 h-10    " />
+          <Shield className="text-[#22d3ee] w-10 h-10" />
           <div>
             <h2 className="font-bold text-xl">SecureShield</h2>
             <p className="text-[#22d3ee] text-xs font-normal">Pro Edition</p>
@@ -81,9 +81,9 @@ function Slide({ isVisible, setIsVisible }) {
               Data Vault
             </h2>
           </Link>
-          {/* ✅ :hover → when the user points
-✅ :focus → when the element is selected (focused)
-✅ :active → when the element is clicked or pressed */}
+          {/* :hover → when the user points
+ :focus → when the element is selected (focused)
+ :active → when the element is clicked or pressed */}
           {/* Therat Detection */}
           <Link
             to="/security"

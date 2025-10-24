@@ -1,5 +1,24 @@
 import React from "react";
-import { Wifi, Shield, Lock } from "lucide-react";
+import {
+  Wifi,
+  Shield,
+  Lock,
+  PanelsTopLeft,
+  Shield,
+  Heart,
+  Lock,
+  Wifi,
+  ShieldCheck,
+  ShieldAlert,
+  MapPin,
+  Eye,
+  WifiHigh,
+  Database,
+  Smartphone,
+  CheckCircle,
+  XCircle,
+  AlertTriangle,
+} from "lucide-react";
 
 import menu from "./svg/menu.svg";
 import protection from "./svg/protection.svg";
@@ -24,12 +43,16 @@ function Dashboard({ toggleSlide }) {
       <div className=" text-slate-400 bg-[#020817] min-h-screen font-sans">
         <div className="  fixed  top-0 left-0  w-full z--1  flex items-center justify-between bg-[#17223a] px-6 py-2 mb-3">
           <div className="flex items-center gap-5">
-            <img
+            <PanelsTopLeft
+              className="opacity-90 hover:opacity-100 cursor-pointer"
+              onClick={toggleSlide}
+            />
+            {/* <img
               onClick={toggleSlide}
               src={menu}
               alt=""
               className="opacity-90 hover:opacity-100 cursor-pointer"
-            />
+            /> */}
             <div>
               <h2 className="text-2xl font-semibold text-white">Dashboard</h2>
               <p className="text-sm">
