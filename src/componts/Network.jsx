@@ -36,7 +36,7 @@ function Security({ toggleSlide }) {
               <img onClick={toggleSlide} src={menu} alt="" />
               <div>
                 <h2 className="text-white text-2xl md py-1 font-bold ">
-                  Device Security
+                  Network Protection
                 </h2>
                 <p className="  text-[#b0b0b0] text-sm  font-serif md:m-2 sm:px-5 ">
                   Hardware-level protection and biometric authentication

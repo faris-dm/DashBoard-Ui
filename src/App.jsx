@@ -29,7 +29,7 @@ function App() {
       ),
     },
     {
-      path: "/data-value",
+      path: "/DataValuet",
       element: (
         <>
           <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
@@ -47,7 +47,7 @@ function App() {
       ),
     },
     {
-      path: "/security",
+      path: "/DeviceSecurity",
       element: (
         <>
           <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
@@ -56,7 +56,7 @@ function App() {
       ),
     },
     {
-      path: "/network",
+      path: "/NetworkProtection",
       element: (
         <>
           <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
@@ -65,7 +65,7 @@ function App() {
       ),
     },
     {
-      path: "/anti-theft",
+      path: "/Anti-theft",
       element: (
         <>
           <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />
@@ -74,7 +74,7 @@ function App() {
       ),
     },
     {
-      path: "/settings",
+      path: "/Settings",
       element: (
         <>
           <Slide isVisible={isSlideVisible} setIsVisible={setIsSlideVisible} />

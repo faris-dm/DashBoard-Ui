@@ -66,7 +66,7 @@ function Slide({ isVisible, setIsVisible }) {
 
           {/* className="" dashboard */}
           <Link
-            to="/data-value"
+            to="/DataValuet"
             onClick={() => setClicked(2)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 2 ? "bg-cyan-700 rounded-xl" : ""
@@ -86,7 +86,7 @@ function Slide({ isVisible, setIsVisible }) {
  :active → when the element is clicked or pressed */}
           {/* Therat Detection */}
           <Link
-            to="/security"
+            to="/DeviceSecurity"
             onClick={() => setClicked(3)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 3 ? "bg-cyan-700 rounded-xl" : ""
@@ -104,7 +104,7 @@ function Slide({ isVisible, setIsVisible }) {
           {/* Data Valuet */}
           {/* Network Protection */}
           <Link
-            to="/network"
+            to="/NetworkProtection"
             onClick={() => setClicked(4)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 4 ? "bg-cyan-700 rounded-xl" : ""
@@ -116,12 +116,12 @@ function Slide({ isVisible, setIsVisible }) {
               } `}
             />
             <h2 className="text-[#b0b0b0]    text-sm capitalize font-medium ">
-              Protection
+              Network Protection
             </h2>
           </Link>
           {/* Anti theif */}
           <Link
-            to="/anti-theft"
+            to="/Anti-theft"
             onClick={() => setClicked(5)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 5 ? "bg-cyan-700 rounded-xl" : ""
@@ -138,7 +138,7 @@ function Slide({ isVisible, setIsVisible }) {
           </Link>
           {/* setting */}
           <Link
-            to="/settings"
+            to="/Settings"
             onClick={() => setClicked(6)}
             className={`flex items-center gap-2 p-3 mt-2 hover:bg-cyan-950 hover:rounded-xl  ${
               clicked === 6 ? "bg-cyan-700 rounded-xl" : ""
