@@ -4,24 +4,14 @@ import {
   Shield,
   Lock,
   PanelsTopLeft,
-  Shield,
-  Heart,
-  Lock,
-  Wifi,
+  Activity,
   ShieldCheck,
-  ShieldAlert,
-  MapPin,
-  Eye,
-  WifiHigh,
-  Database,
-  Smartphone,
-  CheckCircle,
-  XCircle,
-  AlertTriangle,
+
+  // Eye,
 } from "lucide-react";
 
 import menu from "./svg/menu.svg";
-import protection from "./svg/protection.svg";
+
 import heart from "./svg/heart.svg";
 import locked from "./svg/locked.svg";
 import wi_fi from "./svg/wifi.svg";
@@ -96,7 +86,10 @@ function Dashboard({ toggleSlide }) {
               <h3 className="text-white text-2xl font-semibold">127</h3>
               <p>Threats Blocked Today</p>
             </div>
-            <img src={protection} alt="" />
+            {/* <img src={protection} alt="" /> 
+            
+            */}
+            <ShieldCheck className="text-[#22d3ee]" />
           </div>
 
           <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
@@ -104,13 +97,13 @@ function Dashboard({ toggleSlide }) {
               <h3 className="text-white text-2xl font-semibold">3</h3>
               <p>Active Scans</p>
             </div>
-            <img src={heart} alt="" />
+            <Activity className="text-[#60A5FA]" />
           </div>
 
           <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
             <div>
               <h3 className="text-white text-2xl font-semibold">24</h3>
-              <p>Protected Apps</p>
+              <p>Protected Apps here</p>
             </div>
             <Lock className="text-green-700" />
           </div>
