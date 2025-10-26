@@ -12,7 +12,7 @@ import sound from "./svg5/sound.svg";
 import trush from "./svg5/trush.svg";
 import eye from "./svg5/eye.svg";
 import flash from "./svg5/flash.svg";
-import LockedUn from "./svg5/lockedin.svg";
+// import LockedUn from "./svg5/lockedin.svg";
 import Protection from "./svg5/protection.svg";
 import { motion } from "framer-motion";
 import Switch from "./switch";
@@ -123,7 +123,7 @@ function AntiThef({ toggleSlide }) {
             <div className="flex items-center m-4 p-3 justify-between  bg-[#1A2537]  rounded-xl">
               <div className=" items-center  rounded-xl ">
                 <div className=" flex items-start gap-2">
-                  <img src={LockedUn} alt="" />
+                  <img src={flash} alt="" />
                   <div>
                     <h3 className=" text-lg font-medium">Remote Lock</h3>
                     <p className="text-[#b0b0b0] text-sm">
