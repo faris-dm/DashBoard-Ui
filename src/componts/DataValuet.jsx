@@ -18,7 +18,10 @@ function DataValuet({ toggleSlide }) {
   return (
     <div className="bg-[#020817] text-[#d4e6ff] min-h-screen w-full font-sans">
       {/* ===== Navbar ===== */}
-      <div className="fixed top-0 left-0 w-full flex justify-between items-center bg-[#0e1629] px-5 py-3 md:px-8 md:py-4 ">
+      <div
+        z-1
+        className="fixed top-0 left-0 w-full flex justify-between items-center bg-[#0e1629] px-5 py-3 md:px-8 md:py-4 "
+      >
         {/* Title Section */}
         <div className="flex items-center gap-3 md:gap-5 py-3">
           <img
