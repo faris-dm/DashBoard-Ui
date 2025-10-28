@@ -21,7 +21,7 @@ function App() {
   const [isSlideVisible, setIsSlideVisible] = useState(false);
 
   const router = createBrowserRouter([
-    //  this create...  give awrapper fun to the linkage of the pages it like env.t
+    //  this create...  give a wrapper fun to the linkage of the pages it like env.t
     {
       path: "/",
       element: (

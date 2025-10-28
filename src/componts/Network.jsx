@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import menu from "./svg/menu.svg";
 import check from "./svg/check.svg";
-import Finger from "./svg3/fingerPrint.svg";
+import Finger from "./svg3/fingerprint.svg";
 import smallFinger from "./svg3/smallFinger.svg";
 import protection from "./svg/protection.svg";
 
