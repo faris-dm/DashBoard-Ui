@@ -10,7 +10,7 @@ import smallError from "./svg3/error2.svg";
 
 import smallProtection from "./svg3/smallProtection.svg";
 import cpu from "./svg3/cpu.svg";
-import Greenpro from "./svg4/Greenpro.svg";
+import Greenpro from "./svg4/GreenPro.svg";
 import Switch from "./switch";
 
 import eye from "./svg3/eye.svg";
