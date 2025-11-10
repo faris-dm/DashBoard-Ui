@@ -61,7 +61,7 @@ function DataValuet({ toggleSlide }) {
       </div>
 
       {/* ===== Stats ===== */}
-      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-[7rem] mx-4 sm:mx-6 lg:mx-10 lg:mt-[10rem] md:mt-[9rem] sm:mt-[8rem] transition-all duration-300 mt-[20px]  max-[661px]:mt-[7rem] ">
+      <div className="grid  z-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-[7rem] mx-4 sm:mx-6 lg:mx-10 lg:mt-[10rem] md:mt-[9rem] sm:mt-[8rem] transition-all duration-300 mt-[20px]  max-[661px]:mt-[7rem] ">
         {[
           { count: "127", label: "Encrypted Files", icon: Paper },
           { count: "89", label: "Secure Photos", icon: gallery },
