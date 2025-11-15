@@ -25,14 +25,25 @@ import phone from "./svg/phone.svg";
 import green_check from "./svg/greenPost.svg";
 import wrong from "./svg/wrong.svg";
 import alert from "./svg/alert.svg";
+import { delay, motion } from "framer-motion";
 
 function Dashboard({ toggleSlide }) {
   return (
     <>
       {/* <Slide /> */}
       <div className=" text-slate-400 bg-[#020817] min-h-screen font-sans">
-        <div className="  fixed  top-0 left-0  w-full z--1  flex items-center justify-between bg-[#17223a] px-6 py-2 mb-3">
-          <div className="flex items-center gap-5">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1.3, y: -1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="  fixed  top-0 left-0  w-full z-1  flex items-center justify-between bg-[#17223a] px-6 py-2 mb-3"
+        >
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, delay: 2.9 }}
+            className="flex items-center gap-5"
+          >
             <PanelsTopLeft
               className="opacity-90 hover:opacity-100 cursor-pointer"
               onClick={toggleSlide}
@@ -43,45 +54,98 @@ function Dashboard({ toggleSlide }) {
               alt=""
               className="opacity-90 hover:opacity-100 cursor-pointer"
             /> */}
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1.3, y: -1 }}
+              transition={{ duration: 2, delay: 3 }}
+            >
               <h2 className="text-2xl font-semibold text-white">Dashboard</h2>
               <p className="text-sm">
                 Real-time protection status and threat monitoring
               </p>
-            </div>
-          </div>
-          <p className="px-4 py-1 border border-green-500 rounded-full text-xs font-medium cursor-pointer">
+            </motion.div>
+          </motion.div>
+          <motion.p
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.4, delay: 2 }}
+            className="px-4 py-1 border border-green-500 rounded-full text-xs font-medium cursor-pointer"
+          >
             Protected
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Security Score */}
-        <div className="bg-[#1A2A44] border border-gray-500 rounded-lg p-3 mx-5 mb-5 transition-all mt-25">
-          <div className="flex items-center gap-2 mb-3">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1.3, y: -1 }}
+          transition={{ duration: 1.7, delay: 2.2 }}
+          className="bg-[#1A2A44] border border-gray-500 rounded-lg p-3 mx-5 mb-5 transition-all z--1 mt-25"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 3, delay: 5 }}
+            className="flex items-center gap-2 mb-3"
+          >
             <Shield className="text-[#22d3ee]" />
             <h3 className="text-2xl text-white font-bold">Security Score</h3>
-          </div>
+          </motion.div>
 
           <div className=" flex items-center gap-3">
             <div className=" text-center">
-              <p className="text-cyan-400 font-medium text-3xl">94%</p>
-              <p className="text-sm">Excellent</p>
+              <motion.p
+                initial={{ opacity: 0, x: -53 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 3, delay: 2.7 }}
+                className="text-cyan-400 font-medium text-3xl"
+              >
+                94%
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 3.7 }}
+                className="text-sm"
+              >
+                Excellent
+              </motion.p>
             </div>
 
             <div className=" ml-3  w-9/10">
-              <div className="w-[94%] h-[13px] bg-gray-500 rounded-full mt-4 cursor-pointer">
+              <motion.div
+                initial={{ opacity: 0, x: 80 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 3, delay: 2.7 }}
+                className="w-[94%] h-[13px] bg-gray-500 rounded-full mt-4 cursor-pointer"
+              >
                 <div className="w-[86%] h-[13px] bg-cyan-400 rounded-full"></div>
-              </div>
-              <p className="text-[10px] mt-1">
+              </motion.div>
+              <motion.p
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 3.7 }}
+                className="text-[10px] mt-1"
+              >
                 Your device is highly secure with advanced protection enabled
-              </p>
+              </motion.p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Option Section */}
-        <div className="grid grid-cols-4 gap-4 mx-4 my-5 max-md:grid-cols-2 max-sm:grid-cols-1 ">
-          <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
+        <motion.div
+          initial={{ opacity: 0, y: 70 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 3.7 }}
+          className="grid grid-cols-4 gap-4 mx-4 my-5 max-md:grid-cols-2 max-sm:grid-cols-1 "
+        >
+          <motion.div
+            initial={{ opacity: 0, x: -153 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 3, delay: 2.7 }}
+            className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]"
+          >
             <div>
               <h3 className="text-white text-2xl font-semibold">127</h3>
               <p>Threats Blocked Today</p>
@@ -90,35 +154,55 @@ function Dashboard({ toggleSlide }) {
             
             */}
             <ShieldCheck className="text-[#22d3ee]" />
-          </div>
+          </motion.div>
 
-          <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
+          <motion.div
+            initial={{ opacity: 0, x: -153 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 3, delay: 2.7 }}
+            className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]"
+          >
             <div>
               <h3 className="text-white text-2xl font-semibold">3</h3>
               <p>Active Scans</p>
             </div>
             <Activity className="text-[#60A5FA]" />
-          </div>
+          </motion.div>
 
-          <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
+          <motion.div
+            initial={{ opacity: 0, x: 153 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 3, delay: 2.7 }}
+            className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]"
+          >
             <div>
               <h3 className="text-white text-2xl font-semibold">24</h3>
               <p>Protected Apps here</p>
             </div>
             <Lock className="text-green-700" />
-          </div>
+          </motion.div>
 
-          <div className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]">
+          <motion.div
+            initial={{ opacity: 0, x: 153 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 3, delay: 2.7 }}
+            className="flex justify-between items-center border border-silver rounded-lg p-4 bg-[#1A2A44]"
+          >
             <div>
               <h3 className="text-white text-2xl font-semibold">8</h3>
               <p>Network Connections</p>
             </div>
             <Wifi className="text-[#22d3ee]" />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Features */}
-        <div className="grid grid-cols-2 gap-6 mx-9 my-10 max-lg:grid-cols-1">
+        <motion.div
+          initial={{ opacity: 0, y: 70 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, delay: 3.7 }}
+          className="grid grid-cols-2 gap-6 mx-9 my-10 max-lg:grid-cols-1"
+        >
           {/* Section 1 */}
           <div className="bg-[#101929] border border-gray-300 rounded-2xl p-5">
             <h1 className="text-white text-xl font-medium mb-4">
@@ -153,15 +237,30 @@ function Dashboard({ toggleSlide }) {
               Recent Alerts
             </h1>
 
-            <div className="flex justify-between items-center bg-[#1a2a44] border border-black rounded-lg p-4 mb-4">
-              <div className="flex items-center gap-3">
+            <motion.div
+              initial={{ opacity: 0, x: -153 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 3, delay: 2.7 }}
+              className="flex justify-between items-center bg-[#1a2a44] border border-black rounded-lg p-4 mb-4"
+            >
+              <motion.div
+                initial={{ opacity: 0, x: -67 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 3, delay: 4 }}
+                className="flex items-center gap-3"
+              >
                 <img src={wrong} alt="" />
                 <h4>Malicious app installation blocked</h4>
-              </div>
-              <p className="text-red-400 border border-red-400 px-3 py-1 rounded-full text-xs">
+              </motion.div>
+              <motion.p
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.4, delay: 6 }}
+                className="text-red-400 border border-red-400 px-3 py-1 rounded-full text-xs"
+              >
                 high
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
             <div className="flex justify-between items-center bg-[#1a2a44] border border-black rounded-lg p-4 mb-4">
               <div className="flex items-center gap-3">
@@ -193,7 +292,7 @@ function Dashboard({ toggleSlide }) {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
